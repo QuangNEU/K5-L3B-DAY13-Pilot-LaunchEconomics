@@ -67,7 +67,7 @@ Sao chép mục dưới đây cho từng thành viên.
 ### Bằng chứng
 
 - [src/lab13.py](src/lab13.py), [report/team/bang_chi_phi.md](report/team/bang_chi_phi.md), [report/team/pilot_plan.yaml](report/team/pilot_plan.yaml), [report/team/chi_so.md](report/team/chi_so.md), [report/team/2A202603783_NguyenNhuDuyAn.md](report/team/2A202603783_NguyenNhuDuyAn.md).
-- Commit chính: `6aa5a90` (PR #1 `cp1`), `f1104de` (CP2 & CP4).
+- Commit chính: `6aa5a90` (PR #1 `cp1`), `f1104de` (CP2 & CP4), `8a6ad1c` (CP5 & đồng bộ hồ sơ).
 
 ## NguyenMinhQuang-2A202603791
 

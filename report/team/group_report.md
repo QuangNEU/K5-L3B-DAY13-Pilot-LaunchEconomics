@@ -27,7 +27,7 @@ Nhóm xây dựng bộ hồ sơ launch v0 cho trợ lý hoàn phí LogiX-VN tạ
 - **Lỗi (C):** Đồng thuận độc lập **17/20 = 85%**; chốt 3 ca khác biệt (`9: Do người dùng`, `13: Giới hạn hệ thống`, `20: Hệ thống`); bảng khắc phục đủ 5 loại qua ca `6, 7, 16, 11, 5`.
 - **Pilot (D) & Chỉ số (E):** Chia ngẫu nhiên theo nhân viên **20 + 20** (phân tầng depot), MDE **+6 điểm** (`n = 859`/nhóm, `m ≥ 299` yc/NV, `DE = 6,96`, power thực tế ≈ **0,64** nếu tác động thật +5 điểm), 4 luật dừng (tách riêng 0 ca hoàn trùng tắt trong 30 phút), ngày quyết định `2027-01-05`. Chỉ số đợt chạy thử: đóng 24h & không mở lại 7 ngày **82,83%** (`994/1.200`), bỏ qua gợi ý **27,12%** (`48/177`), mở lại 7 ngày **4,25%** (`51/1.200`).
 - **Đề xuất cuối tại [ho_so_launch_v0.md](ho_so_launch_v0.md):** **No-go** — chưa mở pilot cho tới khi hoàn tất 4 điều kiện quay lại Gate 2a (khoá chống trùng + đối soát sổ cái + bật 10 event `trace_id`; cơ chế đo phút thật & lộ trình giảm xem lại; kiểm toán mẫu 100 đơn/tuần; và phê duyệt đánh đổi MDE +6 điểm).
-- **Duyệt chéo Gate 2a:** Nhóm đã thực hiện phiên duyệt chéo tại lớp; nội dung chi tiết phiếu chấm ([phieu_cham.md](phieu_cham.md)) và phản hồi hội đồng dành cho nhóm đang tạm để trống chờ cập nhật lại ghi chép thực tế trước khi nộp bản chốt cuối.
+- **Duyệt chéo Gate 2a:** Nhóm Pilot đã hoàn tất chấm nhóm **G2026** trong vai trò hội đồng tại [phieu_cham.md](phieu_cham.md) (tổng điểm **30/30**, quyết định **Go có điều kiện**, kèm câu hỏi về power `0,64` ở mức +5 điểm và phần trả lời của đội trình). Kết quả hội đồng khác chấm nhóm Pilot được lưu theo phiếu của nhóm hội đồng.
 
 ## 5. Khó khăn và cách xử lý
 
