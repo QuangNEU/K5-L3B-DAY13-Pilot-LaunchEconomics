@@ -31,6 +31,7 @@ Tôi gắn nhãn 20 ca ở cột người 2 của CP3, so sánh với bộ nhãn
 - [x] Đọc hiểu nhãn lỗi và số liệu trong hồ sơ; nhận thông báo nhóm đã chốt CP4 và đối chiếu với bản mới nhất trên main.
 - [x] Đối chiếu ba chỉ số nền từ CSV, bổ sung mục 4 và 7; hoàn thiện bảy mục hồ sơ cùng đề xuất No-go và việc cần làm để quay lại Gate 2a.
 - [x] Hoàn thiện báo cáo cá nhân và thông tin liên hệ trong TEAM.md.
+- [x] Tổng hợp thông tin bốn thành viên từ báo cáo cá nhân; chuẩn bị phiếu chấm và ba ý giải trình về chi phí, cỡ mẫu, đề xuất No-go.
 
 ## 4. Bằng chứng và cách đối chiếu
 

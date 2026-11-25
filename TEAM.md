@@ -2,20 +2,24 @@
 
 ## Thông tin nhóm
 
-- Tên nhóm:
+- Tên nhóm theo tên repo: Pilot.
 - Lớp: L3B
 - Repo nhóm: `K5-L3B-DAY13-Pilot-LaunchEconomics`
 - URL repo: https://github.com/QuangNEU/K5-L3B-DAY13-Pilot-LaunchEconomics
-- Nhánh đóng góp của Minh: `NguyenNhatMinh`; nhánh/commit nộp chung chờ nhóm chốt.
+- Nhánh đóng góp của Minh: `NguyenNhatMinh`.
+- Commit nộp cuối:
+- Người chủ trì đặc tả CP5:
 
 ## Thành viên
 
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
-|   1 |        |      |       |        |         |
-|   2 |        |      |       |        |         |
-|   3 |        |      |       |        |         |
+|   1 | Nguyễn Như Duy An | 2A202603783 | 26ai.annnd@vinuni.edu.vn | | Người viết code |
+|   2 | Nguyễn Minh Quang | 2A202603791 | 26ai.quangnm3@vinuni.edu.vn | | Người kiểm số |
+|   3 | Nguyễn Minh Quân | 2A202603747 | minhquannm0905@gmail.com | | Người gắn nhãn 1 |
 |   4 | Nguyễn Nhật Minh | 2A202603745 | nnhatminh2610@gmail.com | NhMinh-2610 | Người gắn nhãn 2, kiêm giữ hồ sơ |
+
+Họ tên, MSSV, email và vai trò được tổng hợp từ báo cáo cá nhân của từng thành viên trong `report/team/`. An đã cập nhật CP4 tại `f1104de`; Quang hỗ trợ kiểm số D1 và E1 theo báo cáo cá nhân. Người chủ trì đặc tả CP5 chưa được ghi rõ.
 
 Bốn vai của lab:
 
@@ -36,21 +40,7 @@ report/team/MSSV_HoTen.md
 
 Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 
-Sao chép mục dưới đây cho từng thành viên.
-
-## HoVaTen-MSSV
-
-### Phần việc phụ trách
-
--
-
-### Đóng góp cụ thể
-
--
-
-### Bằng chứng
-
--
+Các thành viên ghi đóng góp chi tiết trong báo cáo cá nhân của mình.
 
 ## Nguyễn Nhật Minh 2A202603745
 
@@ -67,6 +57,7 @@ Gắn nhãn người 2, đối chiếu CP3 cùng Nguyễn Minh Quân; nhận k�
 - [x] Minh xác nhận đã đọc hiểu; nhóm đã báo chốt CP4, bản trên main trùng bản đã tổng hợp.
 - [x] Đối chiếu ba chỉ số nền từ CSV; hoàn thiện bảy mục hồ sơ launch, vai trò vận hành đề xuất và kết luận No-go kèm việc cần làm để quay lại Gate 2a.
 - [x] Hoàn thiện báo cáo cá nhân và thông tin liên hệ của Minh.
+- [x] Tổng hợp thông tin thành viên từ báo cáo cá nhân; chuẩn bị nội dung giải trình và phiếu duyệt chéo.
 - [ ] Nhận đặc tả E1–E2, trình hồ sơ cho nhóm/hội đồng, ghi kết luận và phản hồi thực tế, tự nộp LMS.
 
 ### Bằng chứng
