@@ -29,7 +29,7 @@
 
 - File hồ sơ nhóm đã hoàn thiện phần A và B: `report/team/bang_chi_phi.md`.
 - Các con số đối chiếu chính đã kiểm chứng: `4.472 đ` (`simulated`), `5.865 đ` cả hệ thống/yêu cầu (`0,49×`), `4.599 đ` (`0,38×` sau cố định), `6.901.220 đ` (giới hạn 2 lần, B3), `11.743 đ` / `12.415 đ` (xem lại 100%, B4).
-- Commit trên nhánh làm việc của nhóm: *(điền mã commit sau khi commit `report/team/bang_chi_phi.md` và báo cáo cá nhân)*.
+- Commit trên nhánh làm việc của nhóm: `5094d57` (`Hoan thien bang chi phi B1-B4`), `c804a69` (thêm báo cáo cá nhân), đã merge vào `main` qua PR #3 (`3f69dbf`).
 
 ## 5. Công cụ AI đã dùng
 

@@ -14,7 +14,8 @@
   - Xây dựng 3 hàm kinh tế chạy lại (A1) và hàm mô hình chi phí từ trace `mo_hinh(...)` (A2) trong `src/lab13.py` với đầy đủ tham số (`gia_vao`, `gia_ra`, `gia_tool`, `luong_phut`, `he_so_xem_lai`, `he_so_lam_lai`, `max_lan_chay`) để thành viên CP2 tái sử dụng trực tiếp.
   - Tính toán phân tách chi phí theo 4 loại yêu cầu và tỉ lệ thành công theo từng lần chạy (A3), tính tác động chi phí cố định 40 triệu đ/tháng cho phạm vi `noi_dia` + `hang_nang` (A4).
   - Hoàn thiện mục A1–A4 trong `report/team/bang_chi_phi.md` (gắn nhãn `simulated` đầy đủ cho mọi con số từ cột `_simulated`).
-- **CP5 · Tổng hợp nhóm & duyệt chéo Gate 2a:** đóng góp phần số liệu mô hình chi phí, tham gia tổng hợp hồ sơ launch v0 và phản biện/bảo vệ số liệu kinh tế trước hội đồng.
+- **Hỗ trợ hoàn thiện code CP2 & CP4:** bổ sung hàm in bảng độ nhạy B1–B4, tính cỡ mẫu D1 + power `statsmodels` trong `src/lab13.py` và hoàn thiện `report/team/pilot_plan.yaml`.
+- **CP5 · Tổng hợp nhóm:** bổ sung in 3 chỉ số E1 trong `src/lab13.py`, hoàn thiện `report/team/chi_so.md` (E1, 10 event có `trace_id`, kiểm tra chéo, E2 rủi ro kinh tế) và đồng bộ `ho_so_launch_v0.md`, `group_report.md`, `TEAM.md` cùng nhóm.
 
 ## 3. Đóng góp cụ thể
 
@@ -24,12 +25,13 @@
   - **A2:** Tổng chi phí `4.373.585 đ` (có phần `simulated`), `978` việc thành công, chi phí mỗi việc thành công **4.472 đ** (`simulated`) — gấp **16,3 lần** hoá đơn token + tool mỗi yêu cầu (`274,7 đ`). Giờ nhân viên chiếm **92,5%** tổng chi phí (làm lại `51,8%`, xem lại `40,7%`, `simulated`). Chi phí cả hệ thống (cộng 222 ca không thành công) là **5.865 đ/yêu cầu = 0,49×** so với nhân viên tự làm (`12.000 đ`, `simulated`).
   - **A3:** Chỉ ra `noi_dia` (`2.696 đ = 0,22×`, `simulated`) và `hang_nang` (`8.221 đ = 0,69×`, `simulated`) phù hợp đưa vào phạm vi pilot; loại `quoc_te` (`22.515 đ = 1,88×`, `simulated`, thành công `27,3%`, tỉ lệ `ok` qua 3 lần chạy tụt `30,0% → 11,4% → 2,2%`) và `doi_tac` (`10.215 đ = 0,85×`, `simulated`, có điều khoản riêng).
   - **A4:** Cộng chi phí cố định `40 triệu đ/tháng` cho phạm vi `noi_dia` + `hang_nang` (`900/1.200` yêu cầu thành công trong mẫu): ở quy mô `45.000 yc/tháng` là **4.599 đ = 0,38×** (`simulated`); ở một nửa khối lượng là **5.784 đ = 0,48×** (`simulated`).
+- Bổ sung `in_ket_qua_cp2`, `co_mau`, `in_ket_qua_cp4`, `in_ket_qua_cp5` vào `src/lab13.py`; hoàn thiện `report/team/pilot_plan.yaml` (đủ D1/D2, không còn dấu `?`, tách riêng 4 luật dừng chuẩn 4 vế gồm 0 ca hoàn trùng tắt trong 30 phút) và `report/team/chi_so.md` (5 chỉ số E1, 10 event có `trace_id`, ánh xạ chéo, 3 dòng rủi ro kinh tế E2).
 
 ## 4. Bằng chứng
 
-- Nhánh Git thực hiện CP1: `cp1` (chỉ chỉnh sửa các file thuộc CP1, không gây xung đột phần việc của thành viên khác).
-- Code đã viết và chạy thành công: `src/lab13.py` (in `Ba phép thử đáp án biết trước: ĐẠT` cùng đầy đủ bảng A1, A2, A3, tỉ lệ `ok` theo `loai × attempt`, và bảng A4).
-- Báo cáo số liệu CP1: mục A1–A4 trong `report/team/bang_chi_phi.md`.
+- Commit CP1 trên nhánh `cp1` (đã merge PR #1 `46d4d02`): `6aa5a90` — `src/lab13.py` (A1–A4), `report/team/bang_chi_phi.md` (A1–A4), `report/team/2A202603783_NguyenNhuDuyAn.md`.
+- Commit bổ sung code CP2 & hoàn thiện CP4 trên `main`: `f1104de` — `src/lab13.py` (B1–B4, D1), `report/team/pilot_plan.yaml`.
+- Commit hoàn thiện CP5 & đồng bộ hồ sơ trên `main`: `src/lab13.py` (E1), `report/team/chi_so.md`, `report/team/pilot_plan.yaml` (tách luật hoàn trùng), `report/team/ho_so_launch_v0.md`, `report/team/group_report.md`, `TEAM.md`.
 
 ## 5. Công cụ AI đã dùng
 

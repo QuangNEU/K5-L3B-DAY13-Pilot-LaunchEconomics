@@ -32,6 +32,7 @@ Tôi gắn nhãn 20 ca ở cột người 2 của CP3, so sánh với bộ nhãn
 - [x] Đối chiếu ba chỉ số nền từ CSV, bổ sung mục 4 và 7; hoàn thiện bảy mục hồ sơ cùng đề xuất No-go và việc cần làm để quay lại Gate 2a.
 - [x] Hoàn thiện báo cáo cá nhân và thông tin liên hệ trong TEAM.md.
 - [x] Tổng hợp thông tin bốn thành viên từ báo cáo cá nhân; chuẩn bị phiếu chấm và ba ý giải trình về chi phí, cỡ mẫu, đề xuất No-go.
+- [x] Nhận bản CP4/CP5 hoàn thiện, cập nhật phiếu Pilot chấm G2026 đạt 30/30 và giải quyết xung đột khi gộp main.
 
 ## 4. Bằng chứng và cách đối chiếu
 
@@ -45,22 +46,22 @@ Tôi đối chiếu ba mức tăng chi phí ở bảng B1 với hồ sơ: làm l
 
 Tôi đối chiếu [CP4](pilot_plan.yaml) tại commit `f1104de`: 20 nhân viên/nhóm, MDE +6 điểm, tối thiểu 299 yêu cầu/nhân viên. Phép tính `20 × 299 / 6,96 ≈ 859,20` đáp ứng mức 859 yêu cầu hiệu dụng/nhóm. YAML đọc được và không còn dấu hỏi ngoài chú thích. Tôi đã ghi lại điểm cần xác nhận về luật dừng khi có hoàn tiền trùng.
 
-Nhóm đã báo chốt CP4. Bản mới nhất trên main vẫn là `f1104de`, trùng bản tôi đã tổng hợp; điểm diễn đạt luật hoàn trùng vẫn được ghi trong hồ sơ để làm rõ trước khi mở pilot.
+Tôi đã nhận bản cập nhật `8a6ad1c` của An: luật hoàn trùng tách riêng, kích hoạt rollback trong 30 phút; CP5 có năm chỉ số, mười event có `trace_id`, ánh xạ chỉ số và ba rủi ro kinh tế. Tôi đối chiếu các phần này với hồ sơ trước khi đồng bộ báo cáo.
 
 Kết quả kiểm tra `src/lab13.py` trên máy tôi: chương trình chạy hết, ba phép thử A1 ĐẠT (1,20 · 1,25 · 1,25); các bảng A–B và D1 khớp số trong hồ sơ. Cách chạy bằng môi trường riêng ghi trong [README](README.md).
 
 Tôi đối chiếu ba chỉ số trên 1.200 yêu cầu: 994 ca đóng trong 24 giờ và không mở lại đạt 82,83%; 48 lượt sửa/bỏ trong 177 lượt được xem lại đạt 27,12%; 51 ca mở lại trong 7 ngày chiếm 4,25%. Cách đếm và nguồn CSV được ghi trong hồ sơ. Đây là kết quả trong mẫu của lab, chưa chứng minh tác động so với nhóm đối chứng.
 
-## 5. Phần việc tiếp theo và phối hợp
+## 5. Phối hợp và bàn giao
 
-- [x] Nhận xác nhận CP4 đã chốt và cập nhật trạng thái mục 6 hồ sơ; giữ ghi chú về luật hoàn trùng.
-- [ ] Nhận đặc tả E1–E2 đầy đủ từ người phụ trách CP5; kiểm tra event tính được các chỉ số trong hồ sơ và cập nhật theo bản chốt.
-- [ ] Trình đề xuất No-go cho nhóm/hội đồng; ghi kết quả thực tế và cập nhật hồ sơ sau duyệt.
-- [ ] Ghi câu hỏi, câu trả lời và phản hồi duyệt chéo thực tế vào mục 4 báo cáo nhóm; điền [phiếu chấm](phieu_cham.md) khi nhóm làm hội đồng.
-- [ ] Sau khi nhóm chốt bản nộp, kiểm tra quyền truy cập repo và tự nộp link trên LMS bằng tài khoản cá nhân.
+- [x] Nhận CP4 đã sửa và CP5 hoàn chỉnh tại `8a6ad1c`; đối chiếu mục 4,6,7 của hồ sơ.
+- [x] Đồng bộ đề xuất No-go với bản hồ sơ nhóm trên main, giữ rõ các việc để quay lại Gate 2a.
+- [x] Cập nhật [phiếu Pilot chấm G2026](phieu_cham.md) từ `b4eb099`: 30/30, Go có điều kiện; có câu hỏi về power và trả lời của đội trình.
+- [x] Ghi nhận xác nhận mọi thành viên đã nộp LMS trong checklist nhóm tại `7e12e19`, `ab4ef82`.
+- [ ] Bổ sung phản hồi hội đồng dành cho Pilot vào mục 4 báo cáo nhóm khi có biên bản; phiếu chấm G2026 là chiều chấm ngược lại.
 
 ## 6. Tự đánh giá
 
 Tôi đã hoàn thiện bộ nhãn người 2, ghi lý do chốt ba ca khác nhau và tổng hợp các kết quả đã có vào hồ sơ. Phần so nhãn giúp tôi phân biệt rõ hơn giữa nguyên nhân lỗi và cách khắc phục, nhất là ở ca 9, 13 và 20.
 
-Hồ sơ đã đủ bảy mục, có số liệu đối chiếu, vai trò vận hành đề xuất và kết luận No-go. CP4 đã được nhóm báo chốt. Tôi còn cần nhận đặc tả E1–E2 đầy đủ, ghi kết luận nhóm thống nhất và phản hồi sau duyệt chéo.
+Hồ sơ đã đủ bảy mục, CP4/CP5 và phiếu chấm G2026 đã được bàn giao. Tôi đã gộp các cập nhật mới và xử lý xung đột để tài liệu thống nhất. Phản hồi hội đồng dành cho Pilot sẽ được ghi thêm khi có biên bản.
