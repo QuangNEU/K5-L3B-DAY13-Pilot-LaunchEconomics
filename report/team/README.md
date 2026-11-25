@@ -35,25 +35,28 @@ Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 - [x] Cập nhật mục 6 hồ sơ launch, báo cáo nhóm và báo cáo cá nhân theo bản CP4 hiện có; ghi điểm cần xác nhận về luật hoàn trùng.
 - [x] Đối chiếu nhãn và số tổng hợp CP1–CP2 với nguồn; giữ nhãn `simulated`, đơn vị và phạm vi.
 - [x] Kiểm tra `src/lab13.py` trên máy Minh: chương trình chạy hết, ba phép thử A1 ĐẠT (1,20 · 1,25 · 1,25), A–B và D1 khớp hồ sơ.
+- [x] Tính và đối chiếu ba chỉ số nền từ CSV: 82,83% chính, 27,12% bỏ qua gợi ý, 4,25% mở lại; ghi cách đếm trong hồ sơ.
+- [x] Hoàn thiện bảy mục `ho_so_launch_v0.md`, bổ sung vai trò vận hành đề xuất, hai rủi ro kinh tế và kết luận No-go kèm việc để quay lại Gate 2a.
 
 ### Việc Minh cần làm ngay
 
-- [ ] **Đọc lại CP3:** mở `bang_loi.md`, đọc ba ca 9,13,20 và bảng khắc phục năm ca. Khi giải thích được nguyên nhân gốc, cách phát hiện và người xử lý thì tick.
+- [x] **Đọc hiểu CP3 và số liệu:** Minh đã xác nhận đọc hiểu các nhãn, lý do phân biệt và số trong hồ sơ.
 - [ ] **Bổ sung thông tin nhóm:** nhờ các thành viên xác nhận tên nhóm, ba dòng thành viên còn trống và người chủ trì CP4, CP5. Điền vào mục “Thông tin nhóm” và bảng “Thành viên” trong `../../TEAM.md`.
-- [ ] **Hỏi An/Quang về CP4:** một ca hoàn trùng có phải dừng ngay hay chờ ba ngày? Xác nhận thêm ngày quyết định 2027-01-05 và các vai trò vận hành. Ghi câu trả lời ở mục 5 `group_report.md`.
+- [x] **Nhận xác nhận CP4 đã chốt:** Minh xác nhận nhóm đã chốt. Đã fetch và đối chiếu main: bản mới nhất vẫn là `f1104de`, trùng bản đang dùng. Điểm diễn đạt luật hoàn trùng được giữ trong hồ sơ để làm rõ trước khi mở pilot.
 
 ### Việc cần bàn giao hoặc thống nhất
 
-- [ ] **CP4 — người chủ trì xác nhận, An cung cấp bản sửa, Quang kiểm số:** sau khi nhận bản chốt, cập nhật mục 6 `ho_so_launch_v0.md` và mục 3,5 `group_report.md`.
-- [ ] **E1–E2 — nhóm cần chỉ định người chủ trì CP5:** nhận `chi_so.md` có ba chỉ số tính thử, thêm một chỉ số dùng và một an toàn, ít nhất sáu event có `trace_id`, ánh xạ event–chỉ số và hai rủi ro kinh tế. Quang hỗ trợ kiểm số. Minh tổng hợp kết quả vào mục 4,7 hồ sơ và mục 3 báo cáo nhóm.
-- [ ] **Đề xuất — cùng nhóm thống nhất:** nhận quyết định Go / Go có điều kiện / No-go, điều kiện, vai trò chịu trách nhiệm và ngày kiểm tra. Điền cột vai trò còn thiếu, mục 4 báo cáo nhóm và dòng cuối hồ sơ launch.
+- [x] **CP4:** đã nhận bản chốt theo xác nhận của Minh; cập nhật mục 6 hồ sơ và mục 3,5 báo cáo nhóm. Chưa có commit sửa luật hoàn trùng trên các nhánh đã fetch.
+- [ ] **E1–E2 — nhóm cần chỉ định người chủ trì CP5:** nhận `chi_so.md` có ba chỉ số tính thử, thêm một chỉ số dùng và một an toàn, ít nhất sáu event có `trace_id`, ánh xạ event–chỉ số và hai rủi ro kinh tế. Ba số nền và hai rủi ro đã có trong hồ sơ; Minh đối chiếu lại với bản đặc tả được bàn giao, Quang hỗ trợ kiểm số.
+- [ ] **Trình đề xuất — cùng nhóm và hội đồng:** dùng hồ sơ No-go hiện tại, nêu rõ các việc cần làm để quay lại Gate 2a. Ghi quyết định thực tế tại mục 4 báo cáo nhóm và cập nhật hồ sơ nếu có thay đổi; các vai trò vận hành hiện là phân công đề xuất.
 - [ ] **Duyệt chéo — theo phân công của lớp:** khi nhóm chấm nhóm khác, điền tên hai nhóm, điểm ba tiêu chí, tổng /30, quyết định, lý do và hỏi–đáp trong `phieu_cham.md`. Phản hồi dành cho nhóm mình ghi vào mục 4 `group_report.md`, kèm việc cần sửa.
 - [ ] **LMS — Minh tự nộp sau khi nhóm trưởng chốt commit:** mở repo kiểm tra truy cập được, đăng nhập LMS, vào bài Lab 13, dán link repo nhóm và bấm nộp. Kiểm tra trạng thái nộp thành công rồi cập nhật báo cáo cá nhân.
 
 ### Kiểm tra lại trước khi chốt hồ sơ
 
-- [ ] Mở `ho_so_launch_v0.md`: đủ bảy mục; mỗi mục có số chính, trạng thái và vai trò cụ thể.
-- [ ] Đối chiếu số với `bang_chi_phi.md`, `bang_loi.md`, `pilot_plan.yaml`, `chi_so.md`; mọi số dùng thời gian giả lập có nhãn `simulated`.
+- [x] `ho_so_launch_v0.md` đủ bảy mục; mỗi mục có số chính, trạng thái và vai trò cụ thể; dòng cuối có đề xuất.
+- [x] Đối chiếu số với bảng A–B, bảng lỗi, YAML và CSV; các mục 1,2,3,7 ghi Giả lập và có nhãn `simulated`.
+- [ ] Đối chiếu lại mục 4,7 với đặc tả `chi_so.md` khi người phụ trách hoàn thiện.
 - [ ] Kiểm tra liên kết, quyết định cuối, phản hồi duyệt chéo và thông tin nhóm trước khi chốt bản nộp.
 
 Để chạy lại trên máy Minh bằng môi trường riêng (từ thư mục gốc repo, PowerShell):
