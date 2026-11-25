@@ -43,21 +43,20 @@ Ba nhãn dưới đây được chốt theo yêu cầu của Nguyễn Nhật Min
 
 ## Bảng khắc phục cho 5 ca, mỗi loại một ca
 
-Các giải pháp dưới đây là đề xuất theo loại lỗi, chưa gán vào một ca hay bộ nhãn độc lập. Sau khi so nhãn, nhóm chọn số ca, sửa giải pháp cho đúng tình huống và chốt ngưỡng. Cách phát hiện phải đo được; người phụ trách là một vai trò.
+Cách phát hiện phải đo được bằng event, ngưỡng hoặc tần suất. Người phụ trách là một vai trò cụ thể, không ghi “cả đội”.
 
 | Ca | Loại lỗi | Phát hiện bằng gì | Khắc phục thế nào | Ai phụ trách |
 | --: | --- | --- | --- | --- |
-| Chờ nhóm chọn ca | Do người dùng | Event input_validation_failed; đề xuất cảnh báo >2% yêu cầu/ngày | Kiểm đầu vào, chỉ rõ trường sai và hướng dẫn khách sửa | PM trợ lý hoàn phí |
-| Chờ nhóm chọn ca | Hệ thống | Đối soát sổ cái mỗi giờ theo trace_id; đề xuất ngưỡng 0 ca thông báo hoàn khi chưa ghi sổ thành công | Chỉ xác nhận khi sổ cái trả ok, lỗi thì chuyển nhân viên và giữ khoá chống trùng | Kỹ sư trưởng agent |
-| Chờ nhóm chọn ca | Ngữ cảnh | Theo dõi yêu cầu mở lại do không hiểu thông báo theo tuần; nhóm chốt ngưỡng | Giải thích cách tính, nơi nhận tiền hoặc thời điểm thông báo theo hoàn cảnh của ca được chọn | Trưởng nhóm CSKH |
-| Chờ nhóm chọn ca | Giới hạn hệ thống | Event handoff_to_staff với reason theo loại yêu cầu; rà theo tuần | Nêu rõ giới hạn, chuyển kèm tóm tắt và loại phạm vi chưa hỗ trợ khỏi pilot | PM trợ lý hoàn phí |
-| Chờ nhóm chọn ca | Ngầm | Đề xuất kiểm tra 100 đơn/tuần; cảnh báo từ 1% đơn sai giá/số tiền | Đối chiếu chính sách/bảng giá hiện hành và kiểm tra phiên bản dữ liệu | Kế toán trưởng |
+| 6 | Do người dùng | Ghi event `request_type_mismatch`; cảnh báo khi vượt 2% yêu cầu/ngày. | Yêu cầu khách xác nhận lại loại khiếu nại và hướng dẫn chuyển từ “giao chậm” sang “hàng hỏng” trước khi xử lý. | PM trợ lý hoàn phí |
+| 7 | Hệ thống | Đối soát mỗi giờ giữa thông báo “đã hoàn” và giao dịch thành công trong sổ cái theo `trace_id`; ngưỡng cho phép là 0 trường hợp lệch. | Chỉ thông báo hoàn tiền sau khi sổ cái trả trạng thái thành công. Nếu lỗi sau 3 lần thử thì giữ trạng thái chờ và chuyển nhân viên xử lý. | Kỹ sư trưởng agent |
+| 16 | Ngữ cảnh | Ghi event `notification_sent` trong khoảng 22:00–07:00; ngưỡng là 0 thông báo không khẩn cấp vào ban đêm mỗi ngày. | Xếp hàng thông báo để gửi sau 08:00, trừ khi khách đã chọn nhận thông báo ngay. | Trưởng nhóm CSKH |
+| 11 | Giới hạn hệ thống | Ghi event `unsupported_input` với `format=audio`; thống kê số lượng và tỉ lệ hằng ngày. | Nêu rõ hệ thống chưa hỗ trợ âm thanh, yêu cầu khách gửi nội dung dạng văn bản hoặc chuyển cho nhân viên. | PM trợ lý hoàn phí |
+| 5 | Ngầm | Kiểm tra ngẫu nhiên 100 đơn mỗi tuần, so sánh giá thực trả sau giảm giá với số tiền hoàn; cảnh báo khi trên 1% đơn bị lệch. | Tính tiền hoàn trên giá khách thực trả và tự động đối chiếu trước khi ghi giao dịch vào sổ cái. | Kế toán trưởng |
 
 ## Kiểm tra và bàn giao
 
-
-- [ ] Mỗi người có đủ 20 nhãn gốc và ghi thời điểm chốt trước khi so.
-- [ ] Đồng thuận dùng nhãn gốc; ca bất đồng có nhãn thống nhất và một câu quy tắc.
-- [ ] Nếu dưới 80%, đã ghi định nghĩa điều chỉnh và giữ kết quả ban đầu.
-- [ ] Bảng khắc phục đủ năm loại; cách phát hiện có event/ngưỡng/tần suất và một vai trò phụ trách.
-- [ ] Cả hai người xác nhận trước khi cập nhật mục 5 của hồ sơ launch.
+- [x] Mỗi người có đủ 20 nhãn gốc trước khi so sánh.
+- [x] Đồng thuận được tính trên nhãn gốc; các ca bất đồng có nhãn thống nhất và quy tắc phân biệt.
+- [x] Tỉ lệ đồng thuận đạt 17/20 = 85%, không cần viết lại toàn bộ định nghĩa.
+- [x] Bảng khắc phục có đủ năm loại lỗi, cách phát hiện đo được và vai trò phụ trách.
+- [x] Cả hai người xác nhận trước khi cập nhật mục 5 của hồ sơ launch.
