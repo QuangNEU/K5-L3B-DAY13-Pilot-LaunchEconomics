@@ -117,7 +117,7 @@ Gắn nhãn người 2, đối chiếu CP3 cùng Nguyễn Minh Quân; nhận k�
 - [x] Chạy kiểm chứng độc lập `src/lab13.py` trên máy thứ hai của nhóm (ba phép thử A1 ĐẠT, A–B và D1 khớp hồ sơ).
 - [x] Đối chiếu ba chỉ số nền từ CSV; hoàn thiện bảy mục hồ sơ launch, vai trò vận hành đề xuất và kết luận No-go kèm việc cần làm để quay lại Gate 2a.
 - [x] Hoàn thiện báo cáo cá nhân và thông tin liên hệ của Minh.
-- [ ] Cập nhật ghi chép thực tế duyệt chéo Gate 2a khi nhóm hoàn tất phiếu chấm, tự nộp LMS.
+- [x] Cập nhật ghi chép thực tế duyệt chéo Gate 2a khi nhóm hoàn tất phiếu chấm, tự nộp LMS.
 
 ### Bằng chứng
 
