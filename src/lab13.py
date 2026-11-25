@@ -236,6 +236,18 @@ def in_ket_qua_cp4(runs, reqs):
     print(f"Tỉ lệ mo_lai_trong_7_ngay hiện tại       : toàn mẫu {mo_lai_all:.2f}% ({int(reqs['mo_lai_trong_7_ngay'].sum())}/{len(reqs)}) | noi_dia+hang_nang {mo_lai_pilot:.2f}% ({int(sub_pilot['mo_lai_trong_7_ngay'].sum())}/{len(sub_pilot)})")
 
 
+def in_ket_qua_cp5(reqs):
+    """In ba chỉ số tính thử E1 trên mẫu 1.200 yêu cầu (chỉ dùng cho đợt chạy thử, chưa có đối chứng)."""
+    print('\n=== E1 · Ba chỉ số tính thử trên 1.200 yêu cầu (đợt chạy thử, chưa có đối chứng) ===')
+    mask_chinh = (reqs['dong_trong_24h'] == 1) & (reqs['mo_lai_trong_7_ngay'] == 0)
+    xem = reqs[reqs['duoc_xem_lai'] == 1]
+    mask_bo_qua = xem['quyet_dinh_xem_lai'].isin(['sua', 'bo'])
+    mask_an_toan = reqs['mo_lai_trong_7_ngay'] == 1
+    print(f"Chính (% đóng 24h & không mở lại 7 ngày) : {mask_chinh.mean() * 100:.2f}% ({int(mask_chinh.sum())}/{len(reqs)})")
+    print(f"Dùng (tỉ lệ bỏ qua gợi ý: sua + bo)      : {mask_bo_qua.mean() * 100:.2f}% ({int(mask_bo_qua.sum())}/{len(xem)})")
+    print(f"An toàn (tỉ lệ mở lại trong 7 ngày)      : {mask_an_toan.mean() * 100:.2f}% ({int(mask_an_toan.sum())}/{len(reqs)})")
+
+
 if __name__ == '__main__':
     runs = pd.read_csv('logix_runs.csv')
     reqs = pd.read_csv('logix_requests.csv', keep_default_na=False)
@@ -243,3 +255,4 @@ if __name__ == '__main__':
     in_ket_qua_cp1(runs, reqs)
     in_ket_qua_cp2(runs, reqs)
     in_ket_qua_cp4(runs, reqs)
+    in_ket_qua_cp5(reqs)
