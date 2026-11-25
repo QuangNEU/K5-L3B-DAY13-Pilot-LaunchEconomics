@@ -1,4 +1,4 @@
-# Báo cáo nhóm
+# Hồ sơ nhóm
 
 | File | Nhiệm vụ | Ai điền | Ghi chú |
 |---|---|---|---|
@@ -22,3 +22,46 @@ report/team/MSSV_HoTen.md
 Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 
 Đóng góp và bằng chứng của từng thành viên cũng phải được khai báo trong `TEAM.md`.
+
+## Phần việc của Nguyễn Nhật Minh
+
+### Việc đã xong
+
+- [x] Nhãn người 2, đồng thuận 85% và nhãn chốt ca 9,13,20.
+- [x] Tổng hợp CP1 của Nguyễn Như Duy An và CP2 của Nguyễn Minh Quang vào hồ sơ.
+- [x] Nhận bảng khắc phục 5 ca của Quân tại 7752d2a/ea2e38c; cập nhật mục 5 hồ sơ launch.
+- [x] Báo cáo cá nhân đã hoàn thiện; PR #10 đã được merge vào main tại `0b1006c`.
+- [x] Nhận bản CP4 của An tại `f1104de`, đọc YAML, kiểm tra không còn dấu hỏi ngoài chú thích; đối chiếu `20×299/6,96≈859,20` yêu cầu hiệu dụng/nhóm.
+- [x] Cập nhật mục 6 hồ sơ launch, báo cáo nhóm và báo cáo cá nhân theo bản CP4 hiện có; ghi điểm cần xác nhận về luật hoàn trùng.
+- [x] Đối chiếu nhãn và số tổng hợp CP1–CP2 với nguồn; giữ nhãn `simulated`, đơn vị và phạm vi.
+- [x] Kiểm tra `src/lab13.py` trên máy Minh: chương trình chạy hết, ba phép thử A1 ĐẠT (1,20 · 1,25 · 1,25), A–B và D1 khớp hồ sơ.
+
+### Việc Minh cần làm ngay
+
+- [ ] **Đọc lại CP3:** mở `bang_loi.md`, đọc ba ca 9,13,20 và bảng khắc phục năm ca. Khi giải thích được nguyên nhân gốc, cách phát hiện và người xử lý thì tick.
+- [ ] **Bổ sung thông tin nhóm:** nhờ các thành viên xác nhận tên nhóm, ba dòng thành viên còn trống và người chủ trì CP4, CP5. Điền vào mục “Thông tin nhóm” và bảng “Thành viên” trong `../../TEAM.md`.
+- [ ] **Hỏi An/Quang về CP4:** một ca hoàn trùng có phải dừng ngay hay chờ ba ngày? Xác nhận thêm ngày quyết định 2027-01-05 và các vai trò vận hành. Ghi câu trả lời ở mục 5 `group_report.md`.
+
+### Việc cần bàn giao hoặc thống nhất
+
+- [ ] **CP4 — người chủ trì xác nhận, An cung cấp bản sửa, Quang kiểm số:** sau khi nhận bản chốt, cập nhật mục 6 `ho_so_launch_v0.md` và mục 3,5 `group_report.md`.
+- [ ] **E1–E2 — nhóm cần chỉ định người chủ trì CP5:** nhận `chi_so.md` có ba chỉ số tính thử, thêm một chỉ số dùng và một an toàn, ít nhất sáu event có `trace_id`, ánh xạ event–chỉ số và hai rủi ro kinh tế. Quang hỗ trợ kiểm số. Minh tổng hợp kết quả vào mục 4,7 hồ sơ và mục 3 báo cáo nhóm.
+- [ ] **Đề xuất — cùng nhóm thống nhất:** nhận quyết định Go / Go có điều kiện / No-go, điều kiện, vai trò chịu trách nhiệm và ngày kiểm tra. Điền cột vai trò còn thiếu, mục 4 báo cáo nhóm và dòng cuối hồ sơ launch.
+- [ ] **Duyệt chéo — theo phân công của lớp:** khi nhóm chấm nhóm khác, điền tên hai nhóm, điểm ba tiêu chí, tổng /30, quyết định, lý do và hỏi–đáp trong `phieu_cham.md`. Phản hồi dành cho nhóm mình ghi vào mục 4 `group_report.md`, kèm việc cần sửa.
+- [ ] **LMS — Minh tự nộp sau khi nhóm trưởng chốt commit:** mở repo kiểm tra truy cập được, đăng nhập LMS, vào bài Lab 13, dán link repo nhóm và bấm nộp. Kiểm tra trạng thái nộp thành công rồi cập nhật báo cáo cá nhân.
+
+### Kiểm tra lại trước khi chốt hồ sơ
+
+- [ ] Mở `ho_so_launch_v0.md`: đủ bảy mục; mỗi mục có số chính, trạng thái và vai trò cụ thể.
+- [ ] Đối chiếu số với `bang_chi_phi.md`, `bang_loi.md`, `pilot_plan.yaml`, `chi_so.md`; mọi số dùng thời gian giả lập có nhãn `simulated`.
+- [ ] Kiểm tra liên kết, quyết định cuối, phản hồi duyệt chéo và thông tin nhóm trước khi chốt bản nộp.
+
+Để chạy lại trên máy Minh bằng môi trường riêng (từ thư mục gốc repo, PowerShell):
+
+```powershell
+$labPython = Join-Path $env:TEMP 'lab13-minh-venv\Scripts\python.exe'
+Push-Location src
+try { & $labPython -X utf8 lab13.py } finally { Pop-Location }
+```
+
+Môi trường đặt ở đường dẫn ngắn trong Temp để tránh lỗi cài thư viện do đường dẫn OneDrive dài. Nếu Temp đã bị dọn, tạo lại bằng `python -m venv --system-site-packages "$env:TEMP\lab13-minh-venv"` và cài bằng `& $labPython -m pip install -r src/requirements.txt` từ gốc repo.
