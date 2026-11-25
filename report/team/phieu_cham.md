@@ -5,6 +5,8 @@ Nhóm số n chấm nhóm số n + 1; nhóm cuối chấm nhóm 1. Chấm theo b
 - Nhóm chấm (hội đồng): **Pilot**
 - Nhóm được chấm: **G2026**
 
+Nguồn ghi chép: commit `b4eb099` (PR #15) do Quân bàn giao. Đây là kết quả **Pilot chấm G2026**; ngày 15/01/2027 và rollback 15 phút bên dưới thuộc kế hoạch của G2026. Kế hoạch của Pilot tại `pilot_plan.yaml` dùng ngày 05/01/2027 và rollback 30 phút.
+
 | Tiêu chí | 0 điểm | 5 điểm | 10 điểm | Điểm | Lý do (có số) |
 | --- | --- | --- | --- | ---: | --- |
 | Đề xuất khớp bằng chứng | Mâu thuẫn với số của chính nhóm | Khớp nhưng bỏ qua một con số bất lợi | Khớp, nêu cả con số bất lợi và cách xử lý | 10 | Đề xuất Go có điều kiện khớp với bằng chứng. Nhóm nêu lợi ích chi phí của `noi_dia` (0,22×) và `hang_nang` (0,69×), đồng thời không bỏ qua các số bất lợi như `quoc_te` (1,88×), power khoảng 0,64 nếu tác động thật chỉ tăng 5 điểm và một số đầu vào vẫn là simulated. Nhóm xử lý bằng cách thu hẹp phạm vi pilot, giữ nhóm đối chứng, áp dụng luật dừng và thay số simulated bằng số đo thật sau tuần 1. |

@@ -1,27 +1,22 @@
 # Báo cáo nhóm
 
-Báo cáo ngắn (≤ 2 trang). Số liệu chi tiết nằm trong các file hồ sơ; báo cáo này dẫn lại con số chính.
-
 ## 1. Thông tin nhóm
 
-- Tên nhóm: **Pilot**
-- Lớp: **L3B**
-- Repo nhóm: `K5-L3B-DAY13-Pilot-LaunchEconomics`
-- Thành viên và đóng góp chi tiết: xem [TEAM.md](../../TEAM.md)
+- Nhóm: **Pilot** · Lớp: **L3B**.
+- Repo: `K5-L3B-DAY13-Pilot-LaunchEconomics`.
+- Thành viên và đóng góp: [TEAM.md](../../TEAM.md).
 
 ## 2. Mục tiêu và cách tiếp cận
 
-Nhóm xây dựng bộ hồ sơ launch v0 cho trợ lý hoàn phí LogiX-VN tại cổng **Gate 2a** từ mẫu giả lập 1.200 yêu cầu (1.624 lần chạy) nhằm trả lời bốn câu hỏi: chi phí thật mỗi việc thành công, mức độ sử dụng và sự sẵn sàng đo lường, phân loại và khắc phục lỗi, và thiết kế pilot đủ bằng chứng ra quyết định. Nhóm phân công mỗi thành viên phụ trách chính một checkpoint (CP1–CP4), kiểm tra chéo mã nguồn trên hai máy độc lập và cùng tổng hợp CP5.
+Nhóm dùng mẫu giả lập 1.200 yêu cầu, 1.624 lần chạy để tính chi phí, phân loại lỗi và thiết kế pilot tại Gate 2a. Minh phụ trách nhãn người 2 và tổng hợp hồ sơ; kết quả nguồn được đối chiếu với code và dữ liệu.
 
 ## 3. Giải pháp
 
-- **Nhiệm vụ A (CP1 — Mô hình chi phí):** Viết 3 hàm A1 và hàm `mo_hinh(...)` trong [src/lab13.py](../../src/lab13.py) (đọc CSV với `keep_default_na=False`, cộng mọi lần chạy kể cả lỗi, chia cho số ca `thanh_cong`), tách theo 4 loại yêu cầu (A3) và cộng chi phí cố định 40 triệu đ/tháng (A4). Chi tiết: [bang_chi_phi.md](bang_chi_phi.md).
-- **Nhiệm vụ B (CP2 — Bảng độ nhạy):** Chạy 9 kịch bản đơn biến (B1), kịch bản đổi cặp (B2), chi phí cả hệ thống cho giới hạn 1–3 lần chạy (B3) và kịch bản xem lại 100% theo cả hai mức thời gian làm lại 9 phút và 15,3 phút (B4) trong [src/lab13.py](../../src/lab13.py) và [bang_chi_phi.md](bang_chi_phi.md).
-- **Nhiệm vụ C (CP3 — Bảng lỗi & khắc phục):** Hai thành viên (Nguyễn Minh Quân và Nguyễn Nhật Minh) gắn nhãn độc lập 20 ca lỗi theo 5 nhóm Google PAIR trước khi so sánh, thống nhất 3 ca khác biệt theo nguyên nhân gốc và xây bảng khắc phục cho 5 ca đại diện đủ 5 loại lỗi trong [bang_loi.md](bang_loi.md).
-- **Nhiệm vụ D (CP4 — Kế hoạch pilot):** Tính 5 câu cỡ mẫu D1 và power thực tế bằng `statsmodels` trong [src/lab13.py](../../src/lab13.py), trả lời 5 câu kiểm tra tách tác động D2 và chốt 4 luật dừng đủ 4 vế `NẾU – TRONG – THÌ – KHÔNG THÌ` trong [pilot_plan.yaml](pilot_plan.yaml).
-- **Nhiệm vụ E (CP5 — Chỉ số, rủi ro & hồ sơ launch v0):** Tính thử 3 chỉ số trên 1.200 yêu cầu, đề xuất 2 chỉ số mới, thiết kế 10 event mang `trace_id` có ánh xạ chéo và 3 dòng rủi ro kinh tế trong [chi_so.md](chi_so.md); tổng hợp thành hồ sơ một trang 7 mục tại [ho_so_launch_v0.md](ho_so_launch_v0.md).
+- **A–B:** tính chi phí mọi lần chạy, kể cả lỗi; mẫu số CPS chỉ đếm việc thành công. Kiểm tra độ nhạy, giới hạn chạy lại và chi phí cố định trong [bảng chi phí](bang_chi_phi.md).
+- **C:** hai bộ nhãn độc lập, so nhãn và khắc phục năm loại lỗi trong [bảng lỗi](bang_loi.md).
+- **D–E:** kế hoạch pilot có đối chứng, cỡ mẫu và bốn luật dừng; đặc tả năm chỉ số, mười event có `trace_id` và ba rủi ro kinh tế. Nguồn: [pilot](pilot_plan.yaml), [chỉ số](chi_so.md), cập nhật `8a6ad1c`.
 
-## 4. Kết quả
+## 4. Kết quả và duyệt chéo
 
 - **Chi phí (A & B):** Ba phép thử A1 đạt 100% (`1,20 · 1,25 · 1,25`). CPS toàn mẫu là **4.472 đ/việc** (`simulated`), gấp **16,3×** hoá đơn token + tool (`274,7 đ/yc`); giờ nhân viên chiếm **92,5%** (làm lại `51,8%`, xem lại `40,7%`, `simulated`). Chi phí cả hệ thống là **5.865 đ/yc = 0,49×** mốc thủ công 12.000 đ (`simulated`). Phạm vi khả thi gồm `noi_dia` (`2.696 đ = 0,22×`) và `hang_nang` (`8.221 đ = 0,69×`), CPS cộng cố định là **4.599 đ (0,38×)** ở 45.000 yc/tháng và **5.784 đ (0,48×)** ở nửa khối lượng (`simulated`); loại `quoc_te` (`22.515 đ = 1,88×`) và `doi_tac` (`10.215 đ = 0,85×`). Giới hạn **2 lần chạy** rẻ nhất cả hệ thống (**6.901.220 đ**, `simulated`). Nếu xem lại 100%, CPS vọt lên **11.743 đ (0,98×)** đến **12.415 đ (1,03×)** (`simulated`).
 - **Lỗi (C):** Đồng thuận độc lập **17/20 = 85%**; chốt 3 ca khác biệt (`9: Do người dùng`, `13: Giới hạn hệ thống`, `20: Hệ thống`); bảng khắc phục đủ 5 loại qua ca `6, 7, 16, 11, 5`.
@@ -31,21 +26,18 @@ Nhóm xây dựng bộ hồ sơ launch v0 cho trợ lý hoàn phí LogiX-VN tạ
 
 ## 5. Khó khăn và cách xử lý
 
-- **Môi trường Python khác nhau giữa các máy:** Máy của Nguyễn Nhật Minh gặp lỗi thiếu `statsmodels` và đường dẫn OneDrive quá dài khi tạo `.venv` trong repo; nhóm xử lý bằng cách tạo môi trường ảo riêng tại `%TEMP%\lab13-minh-venv`, cài đủ `src/requirements.txt` và chạy `python -X utf8 lab13.py` trong `src/` — kết quả khớp 100% trên cả máy An và máy Minh.
-- **Mâu thuẫn diễn đạt trong luật dừng CP4:** Khi tổng hợp hồ sơ, người giữ hồ sơ phát hiện luật dừng đầu tiên gộp điều kiện `>= 1 ca hoàn trùng` chung với cửa sổ `3 ngày liên tiếp`. Nhóm đã tách thành 2 luật dừng riêng trong [pilot_plan.yaml](pilot_plan.yaml) để đảm bảo 0 ca hoàn trùng kích hoạt rollback trong 30 phút ngay khi phát hiện.
+Máy Minh thiếu `statsmodels`, cài thư viện trong repo gặp đường dẫn OneDrive dài. Đã dùng môi trường riêng tại `%TEMP%\lab13-minh-venv`, cài requirements và chạy Python với `-X utf8` từ `src/`.
 
-## 6. Tổng hợp đóng góp
+Điểm gộp hoàn trùng vào cửa sổ ba ngày đã được An sửa ở `8a6ad1c`: phát hiện một ca hoàn trùng thì kích hoạt rollback trong 30 phút. Xung đột TEAM.md, báo cáo nhóm và phiếu chấm được gộp theo nội dung mới trên main, giữ kết quả duyệt chéo đã bàn giao.
 
-Chi tiết vai trò, phần việc, đóng góp và bằng chứng của từng thành viên (Nguyễn Như Duy An, Nguyễn Minh Quang, Nguyễn Minh Quân, Nguyễn Nhật Minh) được ghi đầy đủ trong [TEAM.md](../../TEAM.md) và 4 báo cáo cá nhân trong `report/team/`.
+## 6. Tổng hợp đóng góp và bàn giao
+
+Chi tiết xem TEAM.md và bốn báo cáo cá nhân. Minh đã nhận CP4/CP5, đồng bộ hồ sơ, cập nhật phiếu chấm G2026 và giải quyết xung đột. Checklist nhóm tại `7e12e19`, `ab4ef82` xác nhận mọi thành viên đã nộp link LMS; người giữ hồ sơ ghi nhận theo nguồn này.
 
 ## 7. Hạn chế và hướng cải thiện
 
-- **Phụ thuộc dữ liệu giả lập:** 92,5% tổng chi phí (`4.044.000 / 4.373.585 đ`) đến từ hai cột `_simulated`; cần đo trực tiếp `phut_xem_lai` và `phut_lam_lai` qua event ngay từ tuần 1 của pilot.
-- **Độ nhạy lớn với tỉ lệ xem lại & giới hạn cỡ mẫu:** Xem lại 100% làm mất hoàn toàn lợi ích chi phí (`12.415 đ = 1,03×`, `simulated`), và với 40 nhân viên, power giảm còn ~0,64 ở mức chênh +5 điểm. Hướng cải thiện là xây dựng quy tắc giảm xem lại theo bậc dựa trên độ tin cậy từng phân khúc và kéo dài thời gian thu mẫu nếu cần tăng power.
+92,5% chi phí đến từ phút giả lập. Xem lại 100% có thể đẩy CPS lên 12.415 đ/việc = 1,03× thủ công (simulated); cần đo phút thực tế và giảm xem lại theo bậc. Cỡ mẫu và power phải được giải thích cùng kết quả. Phản hồi hội đồng chấm Pilot được bổ sung khi nhận biên bản.
 
 ## 8. Tài liệu tham khảo
 
-- Đề bài và quy định repo: [README.md](../../README.md), [RULES.md](../../RULES.md), [CHECKPOINTS.md](../../CHECKPOINTS.md), [RUBRIC.md](../../RUBRIC.md), [docs/du_lieu_va_cong_thuc.md](../../docs/du_lieu_va_cong_thuc.md).
-- Erol và cộng sự, *Cost-of-Pass: An Economic Framework for Evaluating Language Models*, arxiv.org/abs/2504.13359.
-- Google PAIR, *People + AI Guidebook*, chương "Errors + Graceful Failure", pair.withgoogle.com.
-- Tài liệu `statsmodels`, lớp `NormalIndPower` (`stats.power`).
+[Quy tắc](../../RULES.md), [checkpoint](../../CHECKPOINTS.md), [rubric](../../RUBRIC.md), [dữ liệu và công thức](../../docs/du_lieu_va_cong_thuc.md), [hướng dẫn lab](../../docs/Lab13_Huong_dan_chi_tiet_buoi_chieu.md).

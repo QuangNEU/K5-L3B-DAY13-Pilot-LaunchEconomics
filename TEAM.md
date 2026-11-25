@@ -6,6 +6,7 @@
 - Lớp: L3B
 - Repo nhóm: `K5-L3B-DAY13-Pilot-LaunchEconomics` (xem [SUBMISSION.md](SUBMISSION.md))
 - URL repo, nhánh nộp, commit chốt: https://github.com/QuangNEU/K5-L3B-DAY13-Pilot-LaunchEconomics · Nhánh nộp: `main` · Commit chốt: cập nhật ở commit cuối trước 23:59 GMT+7
+- Nhánh đóng góp của Minh: `NguyenNhatMinh`.
 
 ## Thành viên
 
@@ -35,21 +36,7 @@ report/team/MSSV_HoTen.md
 
 Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 
-Sao chép mục dưới đây cho từng thành viên.
-
-## HoVaTen-MSSV
-
-### Phần việc phụ trách
-
--
-
-### Đóng góp cụ thể
-
--
-
-### Bằng chứng
-
--
+Các thành viên ghi đóng góp chi tiết trong báo cáo cá nhân tương ứng.
 
 ## NguyenNhuDuyAn-2A202603783
 
@@ -117,7 +104,11 @@ Gắn nhãn người 2, đối chiếu CP3 cùng Nguyễn Minh Quân; nhận k�
 - [x] Chạy kiểm chứng độc lập `src/lab13.py` trên máy thứ hai của nhóm (ba phép thử A1 ĐẠT, A–B và D1 khớp hồ sơ).
 - [x] Đối chiếu ba chỉ số nền từ CSV; hoàn thiện bảy mục hồ sơ launch, vai trò vận hành đề xuất và kết luận No-go kèm việc cần làm để quay lại Gate 2a.
 - [x] Hoàn thiện báo cáo cá nhân và thông tin liên hệ của Minh.
-- [x] Cập nhật ghi chép thực tế duyệt chéo Gate 2a khi nhóm hoàn tất phiếu chấm, tự nộp LMS.
+- [x] Nhận bản CP4/CP5 hoàn thiện tại `8a6ad1c`: bốn luật dừng, năm chỉ số, mười event và ba rủi ro kinh tế.
+- [x] Tổng hợp thông tin thành viên, giải quyết xung đột và đồng bộ hồ sơ, báo cáo cá nhân với main.
+- [x] Cập nhật phiếu Pilot chấm G2026 từ `b4eb099`: 30/30, Go có điều kiện, có câu hỏi và trả lời.
+- [x] Đối chiếu xác nhận mọi thành viên đã nộp LMS trong checklist nhóm tại `7e12e19` và `ab4ef82`.
+- [ ] Bổ sung phản hồi hội đồng chấm Pilot khi nhận được; hiện repo chưa có biên bản này.
 
 ### Bằng chứng
 
