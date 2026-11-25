@@ -108,7 +108,7 @@ Gắn nhãn người 2, đối chiếu CP3 cùng Nguyễn Minh Quân; nhận k�
 - [x] Tổng hợp thông tin thành viên, giải quyết xung đột và đồng bộ hồ sơ, báo cáo cá nhân với main.
 - [x] Cập nhật phiếu Pilot chấm G2026 từ `b4eb099`: 30/30, Go có điều kiện, có câu hỏi và trả lời.
 - [x] Đối chiếu xác nhận mọi thành viên đã nộp LMS trong checklist nhóm tại `7e12e19` và `ab4ef82`.
-- [ ] Bổ sung phản hồi hội đồng chấm Pilot khi nhận được; hiện repo chưa có biên bản này.
+- [ ] Tổng hợp phản hồi hội đồng chấm Pilot sau khi được bàn giao biên bản; điểm và nhận xét do hội đồng cung cấp, hiện chưa có nguồn xác định trong hồ sơ.
 
 ### Bằng chứng
 

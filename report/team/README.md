@@ -41,7 +41,9 @@ Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 
 ### Còn cần bổ sung khi nhận biên bản
 
-- [ ] **Phản hồi hội đồng chấm Pilot:** điền tên nhóm hội đồng, điểm/quyết định, nhận xét, hỏi–đáp và việc cần sửa tại mục 4 `group_report.md`. Repo hiện chưa có biên bản này; không lấy điểm chấm G2026 làm điểm của Pilot.
+- [ ] **Tổng hợp phản hồi hội đồng chấm Pilot:** sau khi được bàn giao biên bản, ghi tên hội đồng, điểm/quyết định, nhận xét, hỏi–đáp và việc cần sửa tại mục 4 `group_report.md`. Minh phụ trách ghi lại kết quả; hội đồng phụ trách chấm và cung cấp nhận xét. Hiện chưa tìm thấy nguồn xác định phản hồi dành cho Pilot.
+
+Mẫu [báo cáo nhóm gốc](https://github.com/QuangNEU/K5-L3B-DAY13-Pilot-LaunchEconomics/blob/8256c4f/report/team/group_report.md) yêu cầu mục 4 có “Kết quả duyệt chéo nhóm nhận được từ hội đồng”. Đây là phần tổng hợp có điều kiện bàn giao dữ liệu, không phải yêu cầu Minh tự chấm nhóm mình.
 
 Kế hoạch Pilot: quyết định **05/01/2027**, rollback **30 phút**. Mốc **15/01/2027** và **15 phút** trong phiếu chấm thuộc **G2026**. Kết luận Pilot vẫn là **No-go** theo hồ sơ nhóm; kết quả Pilot chấm G2026 là **Go có điều kiện**.
 
