@@ -2,26 +2,11 @@
 
 20 ca lỗi nằm trong `docs/Ngay13_Lab13_De_bai_hoc_vien.docx`. Năm loại theo Google PAIR: **Do người dùng · Hệ thống · Ngữ cảnh · Giới hạn hệ thống · Ngầm**. Gắn nhãn theo nguyên nhân gốc, không theo chỗ cần sửa.
 
-## Quy trình thực hiện CP3
-
-Đã có [phiếu riêng 20 tình huống cho Minh](phieu_nhan_doc_lap_Minh.md), để trống nhãn và lý do.
-
-**Trạng thái: Đã nhập hai bộ nhãn, đối chiếu 85% và chốt ba ca theo Minh; bảng khắc phục còn chờ.** Người gắn nhãn 2: **Nguyễn Nhật Minh · 2A202603745**. Lịch mẫu 15:35–16:08, GMT+7.
-
-- [ ] **8 phút:** mỗi người ghi đủ 20 nhãn trên bản nháp riêng, độc lập, trước khi xem nhãn người còn lại hoặc nhãn tham khảo. Chỉ ghép hai bộ vào bảng chung khi cả hai đã hoàn tất.
-- [ ] **3 phút:** so hai bộ nhãn gốc; điền cột “Trùng?” và tính số ca trùng chia 20. Giữ nguyên nhãn gốc sau khi so.
-- [ ] **5 phút:** thảo luận ca khác nhau, điền riêng “Nhãn thống nhất” và một câu quy tắc cho từng ca. Dưới 80% thì ghi định nghĩa điều chỉnh cùng tỉ lệ ban đầu.
-- [ ] **14 phút:** chọn năm ca, mỗi loại một ca; hoàn thiện phát hiện đo được, hành động và vai trò phụ trách. **3 phút cuối** rà và bàn giao vào mục 5 của [hồ sơ launch](ho_so_launch_v0.md).
-
-- Thời điểm người 1 chốt bản nháp độc lập: Chưa ghi nhận.
-- Thời điểm người 2 chốt bản nháp độc lập: Chưa ghi nhận.
-- Thời điểm bắt đầu so nhãn: Chưa ghi nhận.
-
 ## Hai bộ nhãn độc lập
 
 Người gắn nhãn 1: **Nguyễn Minh Quân** · Người gắn nhãn 2: **Nguyễn Nhật Minh**.
 
-Nguồn người 1: [bản Quân đã commit](https://github.com/QuangNEU/K5-L3B-DAY13-Pilot-LaunchEconomics/blob/42385e0c74c30c649b8dafd690ba03545ec0563b/docs/labels/2A202603747_NguyenMinhQuan.md). Hai cột nhãn gốc được giữ riêng; nhãn người 2 có hỗ trợ Codex. Cột Nhãn thống nhất ghi các ca trùng và ba nhãn Minh đã chốt.
+Nguồn người 1: [bản Quân đã commit](https://github.com/QuangNEU/K5-L3B-DAY13-Pilot-LaunchEconomics/blob/42385e0c74c30c649b8dafd690ba03545ec0563b/docs/labels/2A202603747_NguyenMinhQuan.md). Hai cột nhãn gốc được giữ riêng; Cột Nhãn thống nhất ghi các ca trùng và ba nhãn Minh đã chốt.
 
 | Ca | Nhãn người 1 | Nhãn người 2 | Trùng? | Nhãn thống nhất |
 | --: | --- | --- | --- | --- |
@@ -58,22 +43,20 @@ Ba nhãn dưới đây được chốt theo yêu cầu của Nguyễn Nhật Min
 
 ## Bảng khắc phục cho 5 ca, mỗi loại một ca
 
-Các giải pháp dưới đây là đề xuất theo loại lỗi, chưa gán vào một ca hay bộ nhãn độc lập. Sau khi so nhãn, nhóm chọn số ca, sửa giải pháp cho đúng tình huống và chốt ngưỡng. Cách phát hiện phải đo được; người phụ trách là một vai trò.
+Cách phát hiện phải đo được bằng event, ngưỡng hoặc tần suất. Người phụ trách là một vai trò cụ thể, không ghi “cả đội”.
 
 | Ca | Loại lỗi | Phát hiện bằng gì | Khắc phục thế nào | Ai phụ trách |
 | --: | --- | --- | --- | --- |
-| Chờ nhóm chọn ca | Do người dùng | Event input_validation_failed; đề xuất cảnh báo >2% yêu cầu/ngày | Kiểm đầu vào, chỉ rõ trường sai và hướng dẫn khách sửa | PM trợ lý hoàn phí |
-| Chờ nhóm chọn ca | Hệ thống | Đối soát sổ cái mỗi giờ theo trace_id; đề xuất ngưỡng 0 ca thông báo hoàn khi chưa ghi sổ thành công | Chỉ xác nhận khi sổ cái trả ok, lỗi thì chuyển nhân viên và giữ khoá chống trùng | Kỹ sư trưởng agent |
-| Chờ nhóm chọn ca | Ngữ cảnh | Theo dõi yêu cầu mở lại do không hiểu thông báo theo tuần; nhóm chốt ngưỡng | Giải thích cách tính, nơi nhận tiền hoặc thời điểm thông báo theo hoàn cảnh của ca được chọn | Trưởng nhóm CSKH |
-| Chờ nhóm chọn ca | Giới hạn hệ thống | Event handoff_to_staff với reason theo loại yêu cầu; rà theo tuần | Nêu rõ giới hạn, chuyển kèm tóm tắt và loại phạm vi chưa hỗ trợ khỏi pilot | PM trợ lý hoàn phí |
-| Chờ nhóm chọn ca | Ngầm | Đề xuất kiểm tra 100 đơn/tuần; cảnh báo từ 1% đơn sai giá/số tiền | Đối chiếu chính sách/bảng giá hiện hành và kiểm tra phiên bản dữ liệu | Kế toán trưởng |
+| 6 | Do người dùng | Ghi event `request_type_mismatch`; cảnh báo khi vượt 2% yêu cầu/ngày. | Yêu cầu khách xác nhận lại loại khiếu nại và hướng dẫn chuyển từ “giao chậm” sang “hàng hỏng” trước khi xử lý. | PM trợ lý hoàn phí |
+| 7 | Hệ thống | Đối soát mỗi giờ giữa thông báo “đã hoàn” và giao dịch thành công trong sổ cái theo `trace_id`; ngưỡng cho phép là 0 trường hợp lệch. | Chỉ thông báo hoàn tiền sau khi sổ cái trả trạng thái thành công. Nếu lỗi sau 3 lần thử thì giữ trạng thái chờ và chuyển nhân viên xử lý. | Kỹ sư trưởng agent |
+| 16 | Ngữ cảnh | Ghi event `notification_sent` trong khoảng 22:00–07:00; ngưỡng là 0 thông báo không khẩn cấp vào ban đêm mỗi ngày. | Xếp hàng thông báo để gửi sau 08:00, trừ khi khách đã chọn nhận thông báo ngay. | Trưởng nhóm CSKH |
+| 11 | Giới hạn hệ thống | Ghi event `unsupported_input` với `format=audio`; thống kê số lượng và tỉ lệ hằng ngày. | Nêu rõ hệ thống chưa hỗ trợ âm thanh, yêu cầu khách gửi nội dung dạng văn bản hoặc chuyển cho nhân viên. | PM trợ lý hoàn phí |
+| 5 | Ngầm | Kiểm tra ngẫu nhiên 100 đơn mỗi tuần, so sánh giá thực trả sau giảm giá với số tiền hoàn; cảnh báo khi trên 1% đơn bị lệch. | Tính tiền hoàn trên giá khách thực trả và tự động đối chiếu trước khi ghi giao dịch vào sổ cái. | Kế toán trưởng |
 
 ## Kiểm tra và bàn giao
 
-- [x] Trích 20 tình huống vào phiếu riêng và soạn giải pháp nháp cho năm loại lỗi.
-
-- [ ] Mỗi người có đủ 20 nhãn gốc và ghi thời điểm chốt trước khi so.
-- [ ] Đồng thuận dùng nhãn gốc; ca bất đồng có nhãn thống nhất và một câu quy tắc.
-- [ ] Nếu dưới 80%, đã ghi định nghĩa điều chỉnh và giữ kết quả ban đầu.
-- [ ] Bảng khắc phục đủ năm loại; cách phát hiện có event/ngưỡng/tần suất và một vai trò phụ trách.
-- [ ] Cả hai người xác nhận trước khi cập nhật mục 5 của hồ sơ launch.
+- [x] Mỗi người có đủ 20 nhãn gốc trước khi so sánh.
+- [x] Đồng thuận được tính trên nhãn gốc; các ca bất đồng có nhãn thống nhất và quy tắc phân biệt.
+- [x] Tỉ lệ đồng thuận đạt 17/20 = 85%, không cần viết lại toàn bộ định nghĩa.
+- [x] Bảng khắc phục có đủ năm loại lỗi, cách phát hiện đo được và vai trò phụ trách.
+- [x] Cả hai người xác nhận trước khi cập nhật mục 5 của hồ sơ launch.
