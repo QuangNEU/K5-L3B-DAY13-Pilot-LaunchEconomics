@@ -15,7 +15,7 @@
 |   1 |        |      |       |        |         |
 |   2 |        |      |       |        |         |
 |   3 |        |      |       |        |         |
-|   4 | Nguyễn Nhật Minh | 2A202603745 | nnhatminh2610@gmail.com | Chờ xác nhận | Người gắn nhãn 2, kiêm giữ hồ sơ |
+|   4 | Nguyễn Nhật Minh | 2A202603745 | nnhatminh2610@gmail.com | NhMinh-2610 | Người gắn nhãn 2, kiêm giữ hồ sơ |
 
 Bốn vai của lab:
 
@@ -62,8 +62,10 @@ Gắn nhãn người 2, đối chiếu CP3 cùng Nguyễn Minh Quân; nhận k�
 
 - [x] Nhãn người 2, đồng thuận 17/20=85%, chốt ca 9,13,20.
 - [x] Nhận bảng khắc phục 5 ca 6,7,16,11,5 do Quân hoàn thiện; cập nhật mục 5 hồ sơ.
-- [x] Tổng hợp số CP1–CP2 đã có vào hồ sơ; không ghi nhận việc viết code hay tính bảng nguồn là đóng góp của Minh.
-- [ ] Nhận CP4 và E1–E2, chốt hồ sơ cùng nhóm, ghi phản hồi hội đồng và hoàn thiện báo cáo cá nhân.
+- [x] Tổng hợp kết quả CP1 của An và CP2 của Quang vào hồ sơ, kèm nguồn và nhãn simulated.
+- [x] Nhận bản CP4 tại f1104de, rà YAML/cỡ mẫu hiệu dụng và cập nhật mục 6 hồ sơ; ghi điểm cần xác nhận về luật hoàn trùng.
+- [x] Hoàn thiện báo cáo cá nhân và thông tin liên hệ của Minh.
+- [ ] Nhận xác nhận CP4, E1–E2; chốt hồ sơ cùng nhóm, ghi phản hồi hội đồng và tự nộp LMS.
 
 ### Bằng chứng
 
