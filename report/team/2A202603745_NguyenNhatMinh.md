@@ -11,7 +11,7 @@
 
 ## 2. Phần việc phụ trách
 
-Tôi phụ trách cột nhãn người 2 cho 20 ca ở CP3, đối chiếu với bộ nhãn của Nguyễn Minh Quân và ghi nhãn thống nhất cho các ca khác nhau. Trong vai trò giữ hồ sơ, tôi tiếp nhận kết quả của các thành viên, tổng hợp vào hồ sơ launch và báo cáo nhóm, giữ rõ nguồn số liệu và trạng thái từng phần.
+Tôi gắn nhãn 20 ca ở cột người 2 của CP3, so sánh với bộ nhãn của Nguyễn Minh Quân và ghi nhãn thống nhất cho các ca khác nhau. Tôi cũng nhận kết quả của các thành viên để điền hồ sơ launch và báo cáo nhóm.
 
 ## 3. Đóng góp cụ thể
 
@@ -27,7 +27,8 @@ Tôi phụ trách cột nhãn người 2 cho 20 ca ở CP3, đối chiếu với
 
 - [x] Tiếp nhận bảng khắc phục năm ca **6, 7, 16, 11, 5** do Quân hoàn thiện; tổng hợp vào mục 5 của hồ sơ launch.
 - [x] Tổng hợp kết quả CP1–CP2 do An và Quang bàn giao vào hồ sơ và báo cáo nhóm. Tôi ghi rõ nhãn `simulated` cho các kết quả có sử dụng thời gian giả lập.
-- [x] Hoàn thiện thông tin, đóng góp, bằng chứng và tự đánh giá trong báo cáo cá nhân này.
+- [x] Nhận bản CP4 đã có trên main, rà cấu trúc YAML và cỡ mẫu hiệu dụng; cập nhật mục 6 hồ sơ và ghi điểm cần người phụ trách xác nhận.
+- [x] Hoàn thiện báo cáo cá nhân và thông tin liên hệ trong TEAM.md.
 
 ## 4. Bằng chứng và cách đối chiếu
 
@@ -39,18 +40,20 @@ Khi tổng hợp, tôi phân biệt **4.472 đ/việc thành công** với **5.8
 
 Tôi đối chiếu ba mức tăng chi phí ở bảng B1 với hồ sơ: làm lại **51,8%**, xem lại **40,7%**, lương **23,1%** (`simulated`). Phần viết code và tính bảng nguồn do thành viên phụ trách thực hiện.
 
+Tôi đối chiếu [CP4](pilot_plan.yaml) tại commit `f1104de`: 20 nhân viên/nhóm, MDE +6 điểm, tối thiểu 299 yêu cầu/nhân viên. Phép tính `20 × 299 / 6,96 ≈ 859,20` đáp ứng mức 859 yêu cầu hiệu dụng/nhóm. YAML đọc được và không còn dấu hỏi ngoài chú thích. Tôi đã ghi lại điểm cần xác nhận về luật dừng khi có hoàn tiền trùng.
+
+Kết quả kiểm tra `src/lab13.py` trên máy tôi: chương trình chạy hết, ba phép thử A1 ĐẠT (1,20 · 1,25 · 1,25); các bảng A–B và D1 khớp số trong hồ sơ. Cách chạy bằng môi trường riêng ghi trong [README](README.md).
+
 ## 5. Phần việc tiếp theo và phối hợp
 
-- [ ] Rà bản CP4 đã có trong [kế hoạch pilot](pilot_plan.yaml) với Quang và người chủ trì; cập nhật mục 6 hồ sơ sau khi nhóm xác nhận bản chốt.
+- [ ] Nhờ người phụ trách CP4 và Quang xác nhận luật hoàn trùng (0 ca so với điều kiện “3 ngày liên tiếp”), lịch và vai trò vận hành; sau đó cập nhật trạng thái mục 6 hồ sơ theo bản chốt.
 - [ ] Nhận E1–E2 từ người phụ trách CP5 để cập nhật mục 4 và 7; đối chiếu công thức chỉ số, event, nguồn số và hành động xử lý rủi ro.
 - [ ] Ghi đề xuất Go / Go có điều kiện / No-go sau khi nhóm thống nhất điều kiện, vai trò chịu trách nhiệm và ngày kiểm tra.
 - [ ] Ghi câu hỏi, câu trả lời và phản hồi duyệt chéo thực tế vào mục 4 báo cáo nhóm; điền [phiếu chấm](phieu_cham.md) khi nhóm làm hội đồng.
 - [ ] Sau khi nhóm chốt bản nộp, kiểm tra quyền truy cập repo và tự nộp link trên LMS bằng tài khoản cá nhân.
 
-Các mục trên chưa được đánh dấu hoàn thành vì còn cần bàn giao hoặc hoạt động thực tế.
-
 ## 6. Tự đánh giá
 
-Phần đóng góp chính của tôi là hoàn thiện nhãn người 2, ghi rõ căn cứ cho ba ca bất đồng và tập hợp kết quả vào hồ sơ. Qua việc đối chiếu, tôi thấy cần phân loại theo nguyên nhân gốc và giữ nguyên nhãn ban đầu để tỉ lệ đồng thuận có ý nghĩa.
+Tôi đã hoàn thiện bộ nhãn người 2, ghi lý do chốt ba ca khác nhau và tổng hợp các kết quả đã có vào hồ sơ. Phần so nhãn giúp tôi phân biệt rõ hơn giữa nguyên nhân lỗi và cách khắc phục, nhất là ở ca 9, 13 và 20.
 
-Hạn chế hiện tại là hồ sơ chung còn phụ thuộc kết quả CP5 và quyết định cuối của nhóm. Tôi cần theo sát việc bàn giao, kiểm tra nguồn trước khi cập nhật và giải thích được các số đã tổng hợp. Tôi không ghi các phần chưa có bằng chứng là đã hoàn thành.
+Hồ sơ còn thiếu kết quả CP5 và quyết định cuối của nhóm. Tôi cần nhận đủ các phần này, giải quyết điểm chưa rõ của CP4 và cập nhật phản hồi sau duyệt chéo.
