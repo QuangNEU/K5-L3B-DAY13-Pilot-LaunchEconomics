@@ -25,41 +25,29 @@ Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 
 ## Phần việc của Nguyễn Nhật Minh
 
-### Việc đã xong
+### Đã hoàn thành
 
-- [x] Nhãn người 2, đồng thuận 85% và nhãn chốt ca 9,13,20.
-- [x] Tổng hợp CP1 của Nguyễn Như Duy An và CP2 của Nguyễn Minh Quang vào hồ sơ.
-- [x] Nhận bảng khắc phục 5 ca của Quân tại 7752d2a/ea2e38c; cập nhật mục 5 hồ sơ launch.
-- [x] Báo cáo cá nhân đã hoàn thiện; PR #10 đã được merge vào main tại `0b1006c`.
-- [x] Nhận bản CP4 của An tại `f1104de`, đọc YAML, kiểm tra không còn dấu hỏi ngoài chú thích; đối chiếu `20×299/6,96≈859,20` yêu cầu hiệu dụng/nhóm.
-- [x] Cập nhật mục 6 hồ sơ launch, báo cáo nhóm và báo cáo cá nhân theo bản CP4 hiện có; ghi điểm cần xác nhận về luật hoàn trùng.
-- [x] Đối chiếu nhãn và số tổng hợp CP1–CP2 với nguồn; giữ nhãn `simulated`, đơn vị và phạm vi.
-- [x] Kiểm tra `src/lab13.py` trên máy Minh: chương trình chạy hết, ba phép thử A1 ĐẠT (1,20 · 1,25 · 1,25), A–B và D1 khớp hồ sơ.
-- [x] Tính và đối chiếu ba chỉ số nền từ CSV: 82,83% chính, 27,12% bỏ qua gợi ý, 4,25% mở lại; ghi cách đếm trong hồ sơ.
-- [x] Hoàn thiện bảy mục `ho_so_launch_v0.md`, bổ sung vai trò vận hành đề xuất, hai rủi ro kinh tế và kết luận No-go kèm việc để quay lại Gate 2a.
+- [x] Đọc hiểu nhãn lỗi và số liệu; Minh đã xác nhận.
+- [x] Hoàn thiện nhãn người 2, đồng thuận 17/20=85%, chốt ca 9,13,20 và tiếp nhận bảng khắc phục năm ca.
+- [x] Tổng hợp CP1–CP2, giữ nguồn, đơn vị và nhãn `simulated`.
+- [x] Nhận bản CP4/CP5 tại `8a6ad1c`: bốn luật dừng, năm chỉ số, mười event có `trace_id`, ánh xạ chỉ số và ba rủi ro.
+- [x] Đối chiếu ba chỉ số: 82,83% chính, 27,12% bỏ qua gợi ý, 4,25% mở lại; cỡ mẫu hiệu dụng `20×299/6,96≈859,20`.
+- [x] Đồng bộ bảy mục hồ sơ launch, báo cáo nhóm và báo cáo cá nhân theo đề xuất No-go trên main.
+- [x] Nhận và cập nhật phiếu **Pilot chấm G2026** từ `b4eb099` (PR #15): 10+10+10=30/30, Go có điều kiện; có hỏi–đáp thực tế.
+- [x] Cập nhật thông tin thành viên từ main, giữ đóng góp của các thành viên khác trong TEAM.md.
+- [x] Xử lý xung đột TEAM.md, báo cáo nhóm và phiếu chấm; giữ bản CP4/CP5 mới và dữ liệu hai bộ nhãn.
+- [x] Ghi nhận việc mọi thành viên đã nộp LMS theo checklist nhóm tại `7e12e19`, `ab4ef82`; đây là xác nhận từ hồ sơ nhóm.
+- [x] Kiểm tra code, YAML, số liệu, liên kết và định dạng trước khi commit/push bản giải quyết xung đột.
 
-### Việc Minh cần làm ngay
+### Còn cần bổ sung khi nhận biên bản
 
-- [x] **Đọc hiểu CP3 và số liệu:** Minh đã xác nhận đọc hiểu các nhãn, lý do phân biệt và số trong hồ sơ.
-- [ ] **Bổ sung thông tin nhóm:** nhờ các thành viên xác nhận tên nhóm, ba dòng thành viên còn trống và người chủ trì CP4, CP5. Điền vào mục “Thông tin nhóm” và bảng “Thành viên” trong `../../TEAM.md`.
-- [x] **Nhận xác nhận CP4 đã chốt:** Minh xác nhận nhóm đã chốt. Đã fetch và đối chiếu main: bản mới nhất vẫn là `f1104de`, trùng bản đang dùng. Điểm diễn đạt luật hoàn trùng được giữ trong hồ sơ để làm rõ trước khi mở pilot.
+- [ ] **Phản hồi hội đồng chấm Pilot:** điền tên nhóm hội đồng, điểm/quyết định, nhận xét, hỏi–đáp và việc cần sửa tại mục 4 `group_report.md`. Repo hiện chưa có biên bản này; không lấy điểm chấm G2026 làm điểm của Pilot.
 
-### Việc cần bàn giao hoặc thống nhất
+Kế hoạch Pilot: quyết định **05/01/2027**, rollback **30 phút**. Mốc **15/01/2027** và **15 phút** trong phiếu chấm thuộc **G2026**. Kết luận Pilot vẫn là **No-go** theo hồ sơ nhóm; kết quả Pilot chấm G2026 là **Go có điều kiện**.
 
-- [x] **CP4:** đã nhận bản chốt theo xác nhận của Minh; cập nhật mục 6 hồ sơ và mục 3,5 báo cáo nhóm. Chưa có commit sửa luật hoàn trùng trên các nhánh đã fetch.
-- [ ] **E1–E2 — nhóm cần chỉ định người chủ trì CP5:** nhận `chi_so.md` có ba chỉ số tính thử, thêm một chỉ số dùng và một an toàn, ít nhất sáu event có `trace_id`, ánh xạ event–chỉ số và hai rủi ro kinh tế. Ba số nền và hai rủi ro đã có trong hồ sơ; Minh đối chiếu lại với bản đặc tả được bàn giao, Quang hỗ trợ kiểm số.
-- [ ] **Trình đề xuất — cùng nhóm và hội đồng:** dùng hồ sơ No-go hiện tại, nêu rõ các việc cần làm để quay lại Gate 2a. Ghi quyết định thực tế tại mục 4 báo cáo nhóm và cập nhật hồ sơ nếu có thay đổi; các vai trò vận hành hiện là phân công đề xuất.
-- [ ] **Duyệt chéo — theo phân công của lớp:** khi nhóm chấm nhóm khác, điền tên hai nhóm, điểm ba tiêu chí, tổng /30, quyết định, lý do và hỏi–đáp trong `phieu_cham.md`. Phản hồi dành cho nhóm mình ghi vào mục 4 `group_report.md`, kèm việc cần sửa.
-- [ ] **LMS — Minh tự nộp sau khi nhóm trưởng chốt commit:** mở repo kiểm tra truy cập được, đăng nhập LMS, vào bài Lab 13, dán link repo nhóm và bấm nộp. Kiểm tra trạng thái nộp thành công rồi cập nhật báo cáo cá nhân.
+### Chạy lại kiểm tra
 
-### Kiểm tra lại trước khi chốt hồ sơ
-
-- [x] `ho_so_launch_v0.md` đủ bảy mục; mỗi mục có số chính, trạng thái và vai trò cụ thể; dòng cuối có đề xuất.
-- [x] Đối chiếu số với bảng A–B, bảng lỗi, YAML và CSV; các mục 1,2,3,7 ghi Giả lập và có nhãn `simulated`.
-- [ ] Đối chiếu lại mục 4,7 với đặc tả `chi_so.md` khi người phụ trách hoàn thiện.
-- [ ] Kiểm tra liên kết, quyết định cuối, phản hồi duyệt chéo và thông tin nhóm trước khi chốt bản nộp.
-
-Để chạy lại trên máy Minh bằng môi trường riêng (từ thư mục gốc repo, PowerShell):
+Từ thư mục gốc repo trong PowerShell:
 
 ```powershell
 $labPython = Join-Path $env:TEMP 'lab13-minh-venv\Scripts\python.exe'
@@ -67,4 +55,4 @@ Push-Location src
 try { & $labPython -X utf8 lab13.py } finally { Pop-Location }
 ```
 
-Môi trường đặt ở đường dẫn ngắn trong Temp để tránh lỗi cài thư viện do đường dẫn OneDrive dài. Nếu Temp đã bị dọn, tạo lại bằng `python -m venv --system-site-packages "$env:TEMP\lab13-minh-venv"` và cài bằng `& $labPython -m pip install -r src/requirements.txt` từ gốc repo.
+Môi trường riêng ở Temp giúp tránh đường dẫn OneDrive dài. Nếu cần tạo lại, làm theo `src/README.md` với đường dẫn môi trường ngắn.
