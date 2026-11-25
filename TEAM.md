@@ -14,7 +14,7 @@
 | --: | ------ | ---- | ----- | ------ | ------- |
 |   1 |        |      |       |        |         |
 |   2 |        |      |       |        |         |
-|   3 |        |      |       |        |         |
+|   1 | Nguyễn Minh Quân | 2A202603747 | minhquannm0905@gmail.com | minhquannm0905-cloud | Người gắn nhãn 1 |
 |   4 | Nguyễn Nhật Minh | 2A202603745 | nnhatminh2610@gmail.com | NhMinh-2610 | Người gắn nhãn 2, kiêm giữ hồ sơ |
 
 Bốn vai của lab:
@@ -72,3 +72,27 @@ Gắn nhãn người 2, đối chiếu CP3 cùng Nguyễn Minh Quân; nhận k�
 ### Bằng chứng
 
 [Bảng lỗi](report/team/bang_loi.md), [hồ sơ launch](report/team/ho_so_launch_v0.md), [báo cáo cá nhân](report/team/2A202603745_NguyenNhatMinh.md).
+
+## Nguyễn Minh Quân 2A202603747
+
+### Phần việc phụ trách
+
+Gắn nhãn người 1 trong CP3; đối chiếu kết quả với người gắn nhãn 2; tham gia thống nhất các ca khác nhau, xây dựng bảng khắc phục năm loại lỗi và hoàn thiện phiếu chấm chéo Gate 2a.
+
+### Đóng góp
+
+- [x] Gắn độc lập đủ 20 ca lỗi theo năm loại của Google PAIR.
+- [x] Lưu riêng bộ nhãn ban đầu trước khi đối chiếu.
+- [x] Đối chiếu với Nguyễn Nhật Minh, đạt đồng thuận 17/20 = 85%.
+- [x] Thảo luận và thống nhất nhãn cho ba ca khác nhau 9, 13 và 20.
+- [x] Hoàn thiện bảng khắc phục cho năm ca: 6, 7, 16, 11 và 5, đủ năm loại lỗi.
+- [x] Bổ sung cách phát hiện đo được, biện pháp khắc phục và vai trò phụ trách cho từng ca.
+- [x] Hoàn thiện báo cáo cá nhân.
+- [x] Tham gia chấm chéo nhóm G2026 theo ba tiêu chí Gate 2a và ghi kết quả vào phiếu chấm.
+
+### Bằng chứng
+
+- [Bộ nhãn độc lập](docs/labels/2A202603747_NguyenMinhQuan.md)
+- [Bảng lỗi và cách khắc phục](report/team/bang_loi.md)
+- [Phiếu chấm Gate 2a](report/team/phieu_cham.md)
+- [Báo cáo cá nhân](report/team/2A202603747_NguyenMinhQuan.md)
