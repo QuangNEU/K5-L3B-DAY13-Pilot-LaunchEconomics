@@ -22,15 +22,3 @@ report/team/MSSV_HoTen.md
 Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 
 Đóng góp và bằng chứng của từng thành viên cũng phải được khai báo trong `TEAM.md`.
-
-## Tiến độ phần việc của Nguyễn Nhật Minh
-
-- [x] Nhập hai bộ nhãn, tính đồng thuận **17/20 = 85%**.
-- [x] Chốt ca **9: Do người dùng**, **13: Giới hạn hệ thống**, **20: Hệ thống**; giữ nguyên nhãn gốc.
-- [x] Tổng hợp số từ CP1–CP2 vào hồ sơ launch và báo cáo nhóm.
-- [ ] Cùng người 1 chọn năm ca, mỗi loại một ca; hoàn thiện phát hiện, khắc phục và vai trò tại bảng lỗi.
-- [ ] Nhận bản CP4 và E1–E2 đã chốt từ người phụ trách; cập nhật mục 4, 6, 7 của hồ sơ launch.
-- [ ] Ghi quyết định, điều kiện, vai trò và ngày kiểm tra sau khi nhóm thống nhất.
-- [ ] Ghi phản hồi hội đồng vào mục 4 báo cáo nhóm; điền phiếu chấm từ buổi duyệt thực tế.
-- [ ] Ghi một phép tính tự kiểm tại mục 4 báo cáo cá nhân, cách dùng công cụ tại mục 5 và tự đánh giá tại mục 6.
-- [ ] Nhóm chốt bản nộp trên GitHub; từng thành viên tự nộp LMS trước hạn.

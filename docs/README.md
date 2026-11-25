@@ -11,3 +11,4 @@ Các file quy định chính nằm ở root repo: [README.md](../README.md), [RU
 | `Ngay13_Slide_Launch_Economics.pdf` | Slide buổi sáng | Khi cần xem lại lý thuyết |
 
 Cấu trúc nộp và deadline theo [SUBMISSION.md](../SUBMISSION.md). Mục "Thư mục nộp" trong tài liệu gốc (thư mục `lop_nhom`) được thay bằng repo nhóm.
+
