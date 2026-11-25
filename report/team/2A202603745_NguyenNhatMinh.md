@@ -28,6 +28,7 @@ Tôi gắn nhãn 20 ca ở cột người 2 của CP3, so sánh với bộ nhãn
 - [x] Tiếp nhận bảng khắc phục năm ca **6, 7, 16, 11, 5** do Quân hoàn thiện; tổng hợp vào mục 5 của hồ sơ launch.
 - [x] Tổng hợp kết quả CP1–CP2 do An và Quang bàn giao vào hồ sơ và báo cáo nhóm. Tôi ghi rõ nhãn `simulated` cho các kết quả có sử dụng thời gian giả lập.
 - [x] Nhận bản CP4 đã có trên main, rà cấu trúc YAML và cỡ mẫu hiệu dụng; cập nhật mục 6 hồ sơ và ghi điểm cần người phụ trách xác nhận.
+- [x] Đọc hiểu nhãn lỗi và số liệu trong hồ sơ; nhận thông báo nhóm đã chốt CP4 và đối chiếu với bản mới nhất trên main.
 - [x] Đối chiếu ba chỉ số nền từ CSV, bổ sung mục 4 và 7; hoàn thiện bảy mục hồ sơ cùng đề xuất No-go và việc cần làm để quay lại Gate 2a.
 - [x] Hoàn thiện báo cáo cá nhân và thông tin liên hệ trong TEAM.md.
 
@@ -43,13 +44,15 @@ Tôi đối chiếu ba mức tăng chi phí ở bảng B1 với hồ sơ: làm l
 
 Tôi đối chiếu [CP4](pilot_plan.yaml) tại commit `f1104de`: 20 nhân viên/nhóm, MDE +6 điểm, tối thiểu 299 yêu cầu/nhân viên. Phép tính `20 × 299 / 6,96 ≈ 859,20` đáp ứng mức 859 yêu cầu hiệu dụng/nhóm. YAML đọc được và không còn dấu hỏi ngoài chú thích. Tôi đã ghi lại điểm cần xác nhận về luật dừng khi có hoàn tiền trùng.
 
+Nhóm đã báo chốt CP4. Bản mới nhất trên main vẫn là `f1104de`, trùng bản tôi đã tổng hợp; điểm diễn đạt luật hoàn trùng vẫn được ghi trong hồ sơ để làm rõ trước khi mở pilot.
+
 Kết quả kiểm tra `src/lab13.py` trên máy tôi: chương trình chạy hết, ba phép thử A1 ĐẠT (1,20 · 1,25 · 1,25); các bảng A–B và D1 khớp số trong hồ sơ. Cách chạy bằng môi trường riêng ghi trong [README](README.md).
 
 Tôi đối chiếu ba chỉ số trên 1.200 yêu cầu: 994 ca đóng trong 24 giờ và không mở lại đạt 82,83%; 48 lượt sửa/bỏ trong 177 lượt được xem lại đạt 27,12%; 51 ca mở lại trong 7 ngày chiếm 4,25%. Cách đếm và nguồn CSV được ghi trong hồ sơ. Đây là kết quả trong mẫu của lab, chưa chứng minh tác động so với nhóm đối chứng.
 
 ## 5. Phần việc tiếp theo và phối hợp
 
-- [ ] Nhờ người phụ trách CP4 và Quang xác nhận luật hoàn trùng (0 ca so với điều kiện “3 ngày liên tiếp”), lịch và vai trò vận hành; sau đó cập nhật trạng thái mục 6 hồ sơ theo bản chốt.
+- [x] Nhận xác nhận CP4 đã chốt và cập nhật trạng thái mục 6 hồ sơ; giữ ghi chú về luật hoàn trùng.
 - [ ] Nhận đặc tả E1–E2 đầy đủ từ người phụ trách CP5; kiểm tra event tính được các chỉ số trong hồ sơ và cập nhật theo bản chốt.
 - [ ] Trình đề xuất No-go cho nhóm/hội đồng; ghi kết quả thực tế và cập nhật hồ sơ sau duyệt.
 - [ ] Ghi câu hỏi, câu trả lời và phản hồi duyệt chéo thực tế vào mục 4 báo cáo nhóm; điền [phiếu chấm](phieu_cham.md) khi nhóm làm hội đồng.
@@ -59,4 +62,4 @@ Tôi đối chiếu ba chỉ số trên 1.200 yêu cầu: 994 ca đóng trong 24
 
 Tôi đã hoàn thiện bộ nhãn người 2, ghi lý do chốt ba ca khác nhau và tổng hợp các kết quả đã có vào hồ sơ. Phần so nhãn giúp tôi phân biệt rõ hơn giữa nguyên nhân lỗi và cách khắc phục, nhất là ở ca 9, 13 và 20.
 
-Hồ sơ đã đủ bảy mục, có số liệu đối chiếu, vai trò vận hành đề xuất và kết luận No-go. Tôi còn cần nhận bản sửa CP4, đặc tả E1–E2 đầy đủ và ghi phản hồi sau duyệt chéo.
+Hồ sơ đã đủ bảy mục, có số liệu đối chiếu, vai trò vận hành đề xuất và kết luận No-go. CP4 đã được nhóm báo chốt. Tôi còn cần nhận đặc tả E1–E2 đầy đủ, ghi kết luận nhóm thống nhất và phản hồi sau duyệt chéo.

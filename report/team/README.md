@@ -40,13 +40,13 @@ Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 
 ### Việc Minh cần làm ngay
 
-- [ ] **Đọc lại CP3:** mở `bang_loi.md`, đọc ba ca 9,13,20 và bảng khắc phục năm ca. Khi giải thích được nguyên nhân gốc, cách phát hiện và người xử lý thì tick.
+- [x] **Đọc hiểu CP3 và số liệu:** Minh đã xác nhận đọc hiểu các nhãn, lý do phân biệt và số trong hồ sơ.
 - [ ] **Bổ sung thông tin nhóm:** nhờ các thành viên xác nhận tên nhóm, ba dòng thành viên còn trống và người chủ trì CP4, CP5. Điền vào mục “Thông tin nhóm” và bảng “Thành viên” trong `../../TEAM.md`.
-- [ ] **Hỏi An/Quang về CP4:** một ca hoàn trùng có phải dừng ngay hay chờ ba ngày? Xác nhận thêm ngày quyết định 2027-01-05 và các vai trò vận hành. Ghi câu trả lời ở mục 5 `group_report.md`.
+- [x] **Nhận xác nhận CP4 đã chốt:** Minh xác nhận nhóm đã chốt. Đã fetch và đối chiếu main: bản mới nhất vẫn là `f1104de`, trùng bản đang dùng. Điểm diễn đạt luật hoàn trùng được giữ trong hồ sơ để làm rõ trước khi mở pilot.
 
 ### Việc cần bàn giao hoặc thống nhất
 
-- [ ] **CP4 — người chủ trì xác nhận, An cung cấp bản sửa, Quang kiểm số:** sau khi nhận bản chốt, cập nhật mục 6 `ho_so_launch_v0.md` và mục 3,5 `group_report.md`.
+- [x] **CP4:** đã nhận bản chốt theo xác nhận của Minh; cập nhật mục 6 hồ sơ và mục 3,5 báo cáo nhóm. Chưa có commit sửa luật hoàn trùng trên các nhánh đã fetch.
 - [ ] **E1–E2 — nhóm cần chỉ định người chủ trì CP5:** nhận `chi_so.md` có ba chỉ số tính thử, thêm một chỉ số dùng và một an toàn, ít nhất sáu event có `trace_id`, ánh xạ event–chỉ số và hai rủi ro kinh tế. Ba số nền và hai rủi ro đã có trong hồ sơ; Minh đối chiếu lại với bản đặc tả được bàn giao, Quang hỗ trợ kiểm số.
 - [ ] **Trình đề xuất — cùng nhóm và hội đồng:** dùng hồ sơ No-go hiện tại, nêu rõ các việc cần làm để quay lại Gate 2a. Ghi quyết định thực tế tại mục 4 báo cáo nhóm và cập nhật hồ sơ nếu có thay đổi; các vai trò vận hành hiện là phân công đề xuất.
 - [ ] **Duyệt chéo — theo phân công của lớp:** khi nhóm chấm nhóm khác, điền tên hai nhóm, điểm ba tiêu chí, tổng /30, quyết định, lý do và hỏi–đáp trong `phieu_cham.md`. Phản hồi dành cho nhóm mình ghi vào mục 4 `group_report.md`, kèm việc cần sửa.
