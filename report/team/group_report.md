@@ -18,20 +18,11 @@ Nhóm dùng mẫu giả lập 1.200 yêu cầu, 1.624 lần chạy để tính c
 
 ## 4. Kết quả và duyệt chéo
 
-- **Chi phí:** A1 ĐẠT (1,20 · 1,25 · 1,25). CPS toàn mẫu 4.472 đ/việc; cả hệ thống 5.865 đ/yêu cầu = 0,49× mốc thủ công 12.000 đ. Phạm vi noi_dia + hang_nang có CPS gồm cố định 4.599 đ ở 45.000 yêu cầu/tháng, 5.784 đ khi khối lượng giảm nửa (simulated). Làm lại và xem lại chiếm 51,8% và 40,7% chi phí (simulated).
-- **Lỗi:** đồng thuận 17/20=85%; chốt ca 9: Do người dùng, 13: Giới hạn hệ thống, 20: Hệ thống; đủ năm ca khắc phục 6,7,16,11,5.
-- **Pilot:** 20 nhân viên/nhóm, MDE +6 điểm; 299 yêu cầu/NV, DE=6,96 cho khoảng 859 yêu cầu hiệu dụng/nhóm. Power còn khoảng 0,64 nếu tác động thật +5 điểm. Luật hoàn trùng đã tách riêng, rollback trong 30 phút; ngày quyết định của Pilot là 05/01/2027.
-- **Chỉ số trong đợt chạy thử:** chính 82,83% (994/1.200), bỏ qua gợi ý 27,12% (48/177), mở lại 7 ngày 4,25% (51/1.200). Mẫu chưa có đối chứng, không kết luận tác động của trợ lý.
-- **Đề xuất chốt trong hồ sơ nhóm:** **No-go**, theo [hồ sơ launch](ho_so_launch_v0.md). Quay lại Gate 2a sau khi có bằng chứng chống trùng, đối soát, event, đo phút thật, kiểm toán và phê duyệt đánh đổi MDE.
-- **Pilot chấm G2026:** 10+10+10=30/30, **Go có điều kiện**, có hỏi–đáp tại [phiếu chấm](phieu_cham.md), nguồn `b4eb099` (PR #15). Mốc 15/01/2027 và rollback 15 phút trong phiếu thuộc G2026.
-
-**Phản hồi hội đồng dành cho Pilot** (chưa có biên bản trong repo):
-
-- Nhóm hội đồng:
-- Điểm và quyết định:
-- Nhận xét:
-- Câu hỏi và trả lời:
-- Việc sửa sau duyệt:
+- **Chi phí (A & B):** Ba phép thử A1 đạt 100% (`1,20 · 1,25 · 1,25`). CPS toàn mẫu là **4.472 đ/việc** (`simulated`), gấp **16,3×** hoá đơn token + tool (`274,7 đ/yc`); giờ nhân viên chiếm **92,5%** (làm lại `51,8%`, xem lại `40,7%`, `simulated`). Chi phí cả hệ thống là **5.865 đ/yc = 0,49×** mốc thủ công 12.000 đ (`simulated`). Phạm vi khả thi gồm `noi_dia` (`2.696 đ = 0,22×`) và `hang_nang` (`8.221 đ = 0,69×`), CPS cộng cố định là **4.599 đ (0,38×)** ở 45.000 yc/tháng và **5.784 đ (0,48×)** ở nửa khối lượng (`simulated`); loại `quoc_te` (`22.515 đ = 1,88×`) và `doi_tac` (`10.215 đ = 0,85×`). Giới hạn **2 lần chạy** rẻ nhất cả hệ thống (**6.901.220 đ**, `simulated`). Nếu xem lại 100%, CPS vọt lên **11.743 đ (0,98×)** đến **12.415 đ (1,03×)** (`simulated`).
+- **Lỗi (C):** Đồng thuận độc lập **17/20 = 85%**; chốt 3 ca khác biệt (`9: Do người dùng`, `13: Giới hạn hệ thống`, `20: Hệ thống`); bảng khắc phục đủ 5 loại qua ca `6, 7, 16, 11, 5`.
+- **Pilot (D) & Chỉ số (E):** Chia ngẫu nhiên theo nhân viên **20 + 20** (phân tầng depot), MDE **+6 điểm** (`n = 859`/nhóm, `m ≥ 299` yc/NV, `DE = 6,96`, power thực tế ≈ **0,64** nếu tác động thật +5 điểm), 4 luật dừng (tách riêng 0 ca hoàn trùng tắt trong 30 phút), ngày quyết định `2027-01-05`. Chỉ số đợt chạy thử: đóng 24h & không mở lại 7 ngày **82,83%** (`994/1.200`), bỏ qua gợi ý **27,12%** (`48/177`), mở lại 7 ngày **4,25%** (`51/1.200`).
+- **Đề xuất cuối tại [ho_so_launch_v0.md](ho_so_launch_v0.md):** **No-go** — chưa mở pilot cho tới khi hoàn tất 4 điều kiện quay lại Gate 2a (khoá chống trùng + đối soát sổ cái + bật 10 event `trace_id`; cơ chế đo phút thật & lộ trình giảm xem lại; kiểm toán mẫu 100 đơn/tuần; và phê duyệt đánh đổi MDE +6 điểm).
+- **Duyệt chéo Gate 2a:** Nhóm Pilot đã hoàn tất chấm nhóm **G2026** trong vai trò hội đồng tại [phieu_cham.md](phieu_cham.md) (tổng điểm **30/30**, quyết định **Go có điều kiện**, kèm câu hỏi về power `0,64` ở mức +5 điểm và phần trả lời của đội trình). Kết quả hội đồng khác chấm nhóm Pilot được lưu theo phiếu của nhóm hội đồng.
 
 ## 5. Khó khăn và cách xử lý
 
