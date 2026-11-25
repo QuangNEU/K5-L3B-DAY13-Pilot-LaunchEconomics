@@ -16,9 +16,9 @@ Báo cáo tổng hợp, tối đa hai trang khi trình bày. Người giữ hồ
 ## 3. Giải pháp và nguồn bàn giao
 
 - A–B: [bảng chi phí](bang_chi_phi.md), nguồn `main` tại commit `3f69dbf`; tính mọi lần chạy và so sánh bằng chi phí cả hệ thống/yêu cầu.
-- C: [bảng lỗi](bang_loi.md) đã có cột người 2; [phiếu Minh](phieu_nhan_doc_lap_Minh.md) ghi nhãn gợi ý và lý do, [đối chiếu hai bản](doi_chieu_nhan_Minh.md) cho 17/20=85%, khác ca 9,13,20; chờ hai người xác nhận/thảo luận.
+- C: [bảng lỗi](bang_loi.md) có đủ hai bộ nhãn, đồng thuận **17/20=85%**; ca 9,13,20 đã chốt, còn bảng khắc phục năm ca.
 - D: chờ người phụ trách hoàn thiện [kế hoạch pilot](pilot_plan.yaml); người giữ hồ sơ nhận và rà D1–D2, luật dừng, lịch và rollback.
-- E: chờ [chỉ số/event/rủi ro](chi_so.md) nhóm chốt; các số CSV đối chiếu nằm trong [phiếu kiểm chứng](doi_chieu_ho_so_Minh.md).
+- E: chờ [chỉ số/event/rủi ro](chi_so.md) nhóm chốt; số đối chiếu từ CSV được trình bày tại mục 4.
 
 ## 4. Kết quả và phản hồi hội đồng
 
@@ -37,11 +37,11 @@ CSV đối chiếu cho chỉ số chính **82,83%**, bỏ qua **27,12%**, mở l
 
 ## 5. Khó khăn và cách xử lý
 
-Đã tìm thấy bản người 1 ở nhánh feature/quan-label-1 và đối chiếu hai bản; còn chờ hai người xác nhận/thảo luận CP3 và bàn giao CP4/E1–E2. Các mục thiếu vẫn giữ trạng thái Chưa. Nếu phát sinh lỗi kỹ thuật tại lớp, người thực hiện ghi lệnh, output và cách xử lý thực tế tại đây.
+Hai bộ nhãn và ba ca bất đồng đã được cập nhật; còn bảng khắc phục năm ca và bàn giao CP4/E1–E2. Các mục thiếu vẫn giữ trạng thái Chưa. Nếu phát sinh lỗi kỹ thuật tại lớp, người thực hiện ghi lệnh, output và cách xử lý thực tế tại đây.
 
 ## 6. Tổng hợp đóng góp
 
-Minh phụ trách nhãn người 2 và giữ hồ sơ; [báo cáo cá nhân](2A202603745_NguyenNhatMinh.md) phân biệt hỗ trợ của Codex với việc Minh tự xác nhận. Đóng góp thành viên khác do từng người ghi trong TEAM.md.
+Minh phụ trách nhãn người 2 và giữ hồ sơ; [báo cáo cá nhân](2A202603745_NguyenNhatMinh.md) ghi phần việc, bằng chứng và cách tự kiểm. Đóng góp thành viên khác do từng người ghi trong TEAM.md.
 
 ## 7. Hạn chế và hướng cải thiện
 
@@ -49,4 +49,4 @@ Chi phí thời gian dùng giả lập, ảnh hưởng khối lượng và xem l
 
 ## 8. Tài liệu tham khảo
 
-[Quy tắc](../../RULES.md), [checkpoint](../../CHECKPOINTS.md), [rubric](../../RUBRIC.md), [đề bài](../../docs/Ngay13_Lab13_De_bai_hoc_vien.docx), [log kiểm chứng](kiem_chung_ho_so_Minh.txt).
+[Quy tắc](../../RULES.md), [checkpoint](../../CHECKPOINTS.md), [rubric](../../RUBRIC.md), [đề bài](../../docs/Ngay13_Lab13_De_bai_hoc_vien.docx).

@@ -56,13 +56,11 @@ Sao chép mục dưới đây cho từng thành viên.
 
 ### Phần việc phụ trách
 
-Gắn nhãn người 2, cập nhật hồ sơ launch từ kết quả nhóm bàn giao, tổng hợp báo cáo và ghi nhận duyệt chéo.
+Gắn nhãn người 2, tổng hợp hồ sơ launch, báo cáo và ghi nhận duyệt chéo.
 
 ### Đóng góp và bằng chứng
 
-- [x] Điền 20 nhãn người 2 với hỗ trợ Codex; đã đẩy ở commit `21ec49a`.
-- [x] Tổng hợp CP1–CP2 từ kết quả nhóm đã merge, chuẩn bị hồ sơ launch, báo cáo nhóm và [báo cáo cá nhân](report/team/2A202603745_NguyenNhatMinh.md).
-- [x] Chuẩn bị [checklist](report/team/README.md), [hướng dẫn còn lại](docs/huong_dan_nguoi_gan_nhan_2.md) và [phiếu đối chiếu](report/team/doi_chieu_ho_so_Minh.md).
-- [x] Đối chiếu với bản Quân đã commit: 17/20=85%, khác ca 9,13,20; [bảng đối chiếu](report/team/doi_chieu_nhan_Minh.md).
-- [ ] Minh kiểm tra/chốt nhãn và ghi thời điểm thực tế; cùng người 1 so nhãn, tính đồng thuận, thống nhất ca và giải pháp.
-- [ ] Nhận CP4, E1–E2 của người phụ trách; ghi phản hồi hội đồng và tự nộp LMS.
+- [x] Tổng hợp hai bộ nhãn, ghi tỷ lệ đồng thuận 17/20 = 85% và chốt ca 9, 13, 20 trong [bảng lỗi](report/team/bang_loi.md).
+- [x] Cập nhật số liệu chi phí và độ nhạy vào [hồ sơ launch](report/team/ho_so_launch_v0.md), [báo cáo nhóm](report/team/group_report.md).
+- [ ] Hoàn thiện bảng khắc phục năm ca, nhận CP4/E1–E2 và ghi phản hồi hội đồng.
+- [ ] Hoàn thiện [báo cáo cá nhân](report/team/2A202603745_NguyenNhatMinh.md), bằng chứng tự kiểm và nộp LMS.
