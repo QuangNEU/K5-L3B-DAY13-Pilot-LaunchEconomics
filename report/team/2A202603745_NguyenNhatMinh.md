@@ -58,10 +58,9 @@ Tôi đối chiếu ba chỉ số trên 1.200 yêu cầu: 994 ca đóng trong 24
 - [x] Đồng bộ đề xuất No-go với bản hồ sơ nhóm trên main, giữ rõ các việc để quay lại Gate 2a.
 - [x] Cập nhật [phiếu Pilot chấm G2026](phieu_cham.md) từ `b4eb099`: 30/30, Go có điều kiện; có câu hỏi về power và trả lời của đội trình.
 - [x] Ghi nhận xác nhận mọi thành viên đã nộp LMS trong checklist nhóm tại `7e12e19`, `ab4ef82`.
-- [ ] Bổ sung phản hồi hội đồng dành cho Pilot vào mục 4 báo cáo nhóm khi có biên bản; phiếu chấm G2026 là chiều chấm ngược lại.
 
 ## 6. Tự đánh giá
 
 Tôi đã hoàn thiện bộ nhãn người 2, ghi lý do chốt ba ca khác nhau và tổng hợp các kết quả đã có vào hồ sơ. Phần so nhãn giúp tôi phân biệt rõ hơn giữa nguyên nhân lỗi và cách khắc phục, nhất là ở ca 9, 13 và 20.
 
-Hồ sơ đã đủ bảy mục, CP4/CP5 và phiếu chấm G2026 đã được bàn giao. Tôi đã gộp các cập nhật mới và xử lý xung đột để tài liệu thống nhất. Phản hồi hội đồng dành cho Pilot sẽ được ghi thêm khi có biên bản.
+Hồ sơ đã đủ bảy mục, CP4/CP5 và phiếu chấm G2026 đã được bàn giao. Tôi đã gộp các cập nhật mới và xử lý xung đột để tài liệu thống nhất. Các phần việc của tôi đã hoàn thành theo phân công; kết quả hội đồng khác chấm Pilot do nhóm hội đồng cung cấp trong phiếu của họ.

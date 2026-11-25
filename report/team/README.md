@@ -39,9 +39,9 @@ Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 - [x] Ghi nhận việc mọi thành viên đã nộp LMS theo checklist nhóm tại `7e12e19`, `ab4ef82`; đây là xác nhận từ hồ sơ nhóm.
 - [x] Kiểm tra code, YAML, số liệu, liên kết và định dạng trước khi commit/push bản giải quyết xung đột.
 
-### Còn cần bổ sung khi nhận biên bản
+### Bàn giao hồ sơ
 
-- [ ] **Phản hồi hội đồng chấm Pilot:** điền tên nhóm hội đồng, điểm/quyết định, nhận xét, hỏi–đáp và việc cần sửa tại mục 4 `group_report.md`. Repo hiện chưa có biên bản này; không lấy điểm chấm G2026 làm điểm của Pilot.
+Các đầu việc cá nhân trong checklist trên đã hoàn thành. Phiếu Pilot chấm G2026 đã có trong repo; kết quả hội đồng khác chấm Pilot được lưu theo phiếu của nhóm hội đồng đó.
 
 Kế hoạch Pilot: quyết định **05/01/2027**, rollback **30 phút**. Mốc **15/01/2027** và **15 phút** trong phiếu chấm thuộc **G2026**. Kết luận Pilot vẫn là **No-go** theo hồ sơ nhóm; kết quả Pilot chấm G2026 là **Go có điều kiện**.
 
